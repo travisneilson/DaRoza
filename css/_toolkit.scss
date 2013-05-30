@@ -1,0 +1,28 @@
+$dynastyRed: #ae1d22;
+
+.ball-rule {
+  border: solid #e7e7e7; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0;
+  position: relative;
+  
+  &.ball-left:before, &.ball-right:after {
+    content: '';
+    display: block;
+    @include size(5);
+    @include position(absolute, -3px 0 0 0);
+    border-radius: 50%;
+    background-color: #e7e7e7;
+  }
+  
+  &.ball-left:before { left: 0; }
+  
+  &.ball-right:after { right: 0; }
+}
+
+.positioner {
+  max-width: 940px;
+  margin: 0 auto;
+  @include clearfix();
+}
+
+.float-right {float: right;}
+.float-left {float: left;}

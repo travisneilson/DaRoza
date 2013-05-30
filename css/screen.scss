@@ -1,0 +1,318 @@
+@import 'fonts';
+@import 'fontawesome';
+@import 'bourbon/bourbon';
+@import 'toolkit';
+@import 'base';
+
+
+/* Site Title, Nav, & Social */
+header {
+  height: 60px;
+  border-bottom: 1px solid #eaeaea;
+  
+  nav {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    /*top: -60*4px;*/
+    border-bottom: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    @include transition();
+    z-index: 10;
+    
+    ul {
+      
+      li {
+        text-align: center;
+        
+        a {
+          text-decoration: none;
+          font-size: 16px;
+          letter-spacing: .2em;
+          line-height: 60px;
+          height: 60px;
+          display: block;
+          
+          &:hover {
+            background-color: $dynastyRed;
+            background-color: #f5f5f5;
+            color: white;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  
+  h1 {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 30px;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: #f5f5f5;
+    }
+    
+    img {
+      position: relative;
+      top: 2px;
+      margin-left: 15px;
+    }
+  }
+  
+  .social {
+    height: 60px;
+    float: right;
+    padding: 0 0 0 20px;
+    line-height: 60px;
+    border-left: 1px solid #eaeaea;
+    
+    a {
+      color: #989898;
+      margin-right: 20px;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      
+      &:hover {color: $dynastyRed;}
+    }
+  }
+}
+
+/* Single Page Title (Persons Name) */
+
+.title {
+  text-align: center;
+  padding-top: 70px;
+  
+  h2 {
+    font-size: 90px;
+    padding: 0 80px;
+    display: inline-block;
+    height: 180px;
+    line-height: 156px;
+    white-space: nowrap;
+    background-image: url(../img/title-ornament-left.svg), url(../img/title-ornament-right.svg);
+    background-position: top left, top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+    width: 70%;
+  }
+}
+
+
+
+/* Person Summary */
+.summary {
+  margin: 50px auto;
+  width: 400px;
+  font: 12px/2.2 $helvetica;
+  position: relative;
+  p {
+    padding: 0 20px;  
+  }
+  
+  &:before, &:after {
+    content: '';
+    @include size(35);
+    @include position(absolute, 50% -100px 0 0);
+    margin-top: -17px;
+    background: url(../img/red-deer.svg) center center no-repeat;
+    background-size: contain;
+  }
+  
+  &:before { left: -100px; right: auto; }
+}
+
+
+
+.full-width-portrait {
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  
+  &:before {
+    content: '';
+    @include size(100% 3px);
+    @include position(absolute, 0px 0 0 0);
+    background-image: url(../img/zig-edge-top.png);
+  }
+  
+  &:after {
+    content: '';
+    @include size(100% 3px);
+    @include position(absolute, 0 0 0px 0);
+    background-image: url(../img/zig-edge-bottom.png);
+  }
+  
+  .aspect {
+    padding-bottom: 66.6%;
+  }
+}
+
+
+
+/* Text Container Types */
+
+section.text-container {
+  max-width: 540px;
+  padding: 40px;
+  background-color: rgba(255,255,255,0.9);
+  
+  &.pull-up {
+    position: relative;
+    top: -110px;
+    margin-bottom: -110px;
+  }
+}
+
+
+section.family-at-a-glance {
+  float: left;
+  width: 320px;
+  font-family: $helvetica;
+  font-size: 11px;
+  line-height: 1.2;
+  padding-top: 60px;
+  margin-bottom: 50px;
+  
+  .family-title {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  ul {
+    padding-left: 70px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    float: left;
+    width: 110px;
+  }
+}
+
+
+figure.image-and-pull-quote {
+  max-width: 940px;
+  margin: 0 auto;
+  
+  &.full-width {
+    max-width: 100%;
+  }
+  
+  img {width: 100%;}
+  
+  figcaption {
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    top: -50px;
+  }
+}
+
+figcaption {
+  text-align: center;
+  background-color: white;
+  font: italic 18px/2 $georgia;
+  color: #585858;
+}
+
+
+
+
+.decoration {
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+figure.four-by-four {
+  position: relative;
+  margin-bottom: 50px;
+  @include clearfix();
+  
+  >*:not(figcaption) {
+    float:left;
+    margin: 5px;
+  }
+  
+  .spacer {
+    @include size(460 306);
+    position: relative;
+    
+    hr.ball-rule {
+      @include position(absolute, 50% 0 0 50%);
+      width: 85px;
+      margin-left: -42px;
+    }
+  }
+  
+  figcaption {
+    background-color: white;
+    @include position(absolute, 50% 30% 0 30%);
+    padding: 20px;
+    margin-top: -50px;
+    
+    hr.ball-rule {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+
+.family-tree {
+  width: 85%;
+  max-width: 1200px;
+  margin: 50px auto;
+  display: block;
+}
+
+
+
+
+footer {
+  @include size(100% 205px);
+  background: url(../img/decoration-blank.jpg) center center no-repeat;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  
+  h3 {
+    padding-top: 90px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import 'queries';

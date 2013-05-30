@@ -1,0 +1,152 @@
+/* Stupid Big*/
+@media only screen and (min-width: 1500px) {
+  
+  .title h2 {
+    height: 250px;
+    line-height: 200px;
+  }
+}
+
+/* Smaller than standard 940 (devices and browsers) */
+@media only screen and (max-width: 939px) {
+  
+  .title h2 {
+    height: 100px;
+    line-height: 80px;
+  }
+  
+  .decoration {
+    float: none;
+  }
+  
+  .text-container {
+    float: none;
+    margin: 0 auto;
+  }
+  
+  .family-at-a-glance {
+    margin: 0 auto 50px;
+    float: none !important;
+    @include clearfix();
+  }
+  
+  figure.four-by-four {
+    text-align: center;
+    .spacer {display: none;}
+    img {
+      width: 48%;
+      float: none!important;
+    }
+    figcaption {
+      position: relative;
+      left: auto;
+      right: auto;
+      margin: -40px 40px 0;
+    }
+  }
+  
+}
+
+@media only screen and (max-width: 630px) {
+  .summary {
+    margin-bottom: 150px;
+    &:before {display:none;}
+    &:after {
+      left: 50%;
+      right: auto;
+      top: 140%;
+      margin-left: -17px;
+    }
+  }
+  
+  figure.four-by-four img {
+      width: 90%;
+  }
+  
+  section.text-container {
+    
+    &.pull-up {
+      top: -50px;
+      margin-bottom: -50px;
+    }
+  }
+  
+  .title h2 {
+    height: 100px;
+    line-height: 80px;
+    background: none;
+    width: 100%;
+    white-space: normal;
+    padding: 0px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}/*767*/
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */	
+	@media only screen and (max-width: 479px) {
+	
+	  .summary{
+	    width: 280px;
+	      &:after {
+	        top: 120%;
+        }
+	  }
+	  
+	  section.family-at-a-glance .family-title {
+	    text-align: center;
+	  }
+	  
+	  figure.image-and-pull-quote figcaption { 
+	    width: 70%;
+	    top: -30px;
+	  }
+	  
+	  nav {
+	    width: 100%;
+	  }
+	  
+	  header h1 {
+	    text-align: center;
+  	  
+  	  span {
+  	    display: none;
+  	  }
+  	  
+  	  img {
+  	    margin: 0;
+  	  }
+	  }
+	  
+	  .social {
+	    float: none;
+	    width: 100%;
+	    margin-top: 60px;
+	    text-align: center;
+	    padding: 0;
+	    
+	    a {
+	      margin-left: 20px;
+	    }
+	  }
+	  
+	}/*479*/
+	
+	
+	
+	
