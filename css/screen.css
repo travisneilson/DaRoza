@@ -140,7 +140,7 @@ ul.icons {
 
 .icon-border {
   border: solid 1px #eeeeee;
-  padding: 0.2em 0.25em 0.15em;
+  padding: .2em .25em .15em;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
@@ -410,7 +410,7 @@ strong {
   font-weight: bold; }
 
 hr {
-  border: solid #dddddd;
+  border: solid #ddd;
   border-width: 1px 0 0;
   clear: both;
   margin: 10px 0 30px;
@@ -429,9 +429,13 @@ a:hover, a:focus {
 /* Site Title, Nav, & Social */
 header {
   height: 60px;
-  border-bottom: 1px solid #eaeaea; }
+  border-bottom: 1px solid #eaeaea;
+  background: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  width: 100%;
+  z-index: 99; }
   header nav {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
     top: 0;
     /*top: -60*4px;*/
@@ -500,7 +504,7 @@ header {
     background-position: top left, top right;
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 0;
+    margin: 50px 0 0 0;
     width: 70%; }
 
 /* Person Summary */
@@ -684,7 +688,7 @@ footer {
       display: none; }
     figure.four-by-four img {
       width: 48%;
-      float: none!important; }
+      float: none !important; }
     figure.four-by-four figcaption {
       position: relative;
       left: auto;
