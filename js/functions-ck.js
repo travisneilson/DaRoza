@@ -70,13 +70,13 @@ function navStuff() {
       navItemNum = $navItem.length,
       navItemHeight = $navItem.height();
     
-  $nav.css('top', '-' + navItemNum*navItemHeight + 'px').addClass('closed');
+  $nav.addClass('closed');
   
   $nav.click(function() {
-    if ($nav.hasClass('closed')) {
-      $nav.css('top', '0px').removeClass('closed');
+    if (!$nav.hasClass('closed')) {
+      $nav.css('bottom', '-1px').addClass('closed');
     } else {
-      $nav.css('top', '-' + navItemNum*navItemHeight + 'px').addClass('closed');
+      $nav.css('bottom', '-' + navItemNum*navItemHeight + 'px').removeClass('closed');
     }
   });
 }
