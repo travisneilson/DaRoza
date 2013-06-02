@@ -31,17 +31,31 @@
   p
     padding: 0 20px
   
-  &:before, &:after
-    content: ''
-    @include size(35)
-    @include position(absolute, 50% -100px 0 0)
+  .summary-icon-1
+    font-size: 34px
+    color: $dynastyRed
+    display: block
+    +position(absolute, 50% -100px 0 0)
+    line-height: 1
     margin-top: -17px
-    background: url(../img/red-deer.svg) center center no-repeat
-    background-size: contain
   
-  &:before
+  .summary-icon-2
+    @extend .summary-icon-1
     left: -100px
     right: auto
+  
+  /*  
+    &:before, &:after
+      content: ''
+      @include size(35)
+      @include position(absolute, 50% -100px 0 0)
+      margin-top: -17px
+      background: url(../img/red-deer.svg) center center no-repeat
+      background-size: contain
+    
+    &:before
+      left: -100px
+      right: auto
 
 
 

@@ -1,0 +1,52 @@
+@font-face {
+	font-family: 'fontawesome';
+	src:url('1-base/icon-fonts/fontawesome.eot');
+	src:url('1-base/icon-fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
+		url('1-base/icon-fonts/fontawesome.woff') format('woff'),
+		url('1-base/icon-fonts/fontawesome.ttf') format('truetype'),
+		url('1-base/icon-fonts/fontawesome.svg#fontawesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'fontawesome';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+[class*="icon-"]:before {
+	font-family: 'fontawesome';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-facebook:before {
+	content: "\f09a";
+}
+.icon-twitter:before {
+	content: "\f099";
+}
+.icon-google-plus:before {
+	content: "\f0d5";
+}
+.icon-deer-head:before {
+	content: "\e000";
+}
+.icon-rattle-left:before {
+	content: "\e001";
+}
+.icon-rattle-right:before {
+	content: "\e002";
+}
