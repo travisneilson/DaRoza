@@ -1,0 +1,81 @@
+
+// Layout and Structure
+
+header
+  height: 60px
+  border-bottom: 1px solid #eaeaea
+  background: white
+  position: fixed
+  width: 100%
+  z-index: 99
+  top: 0
+  
+  nav
+    background-color: white
+    position: absolute
+    bottom: -1px
+    border-bottom: 1px solid #eaeaea
+    border-right: 1px solid #eaeaea
+    +transition()
+    z-index: 10
+    
+    ul
+      
+      li
+        text-align: center
+        
+        a
+          text-decoration: none
+          font-size: 16px
+          letter-spacing: .2em
+          line-height: 60px
+          height: 60px
+          display: block
+          
+          &:hover
+            background-color: $dynastyRed
+            background-color: #f5f5f5
+            color: white
+            color: black
+
+
+
+  // Menu label / Site Title
+
+  h1
+    height: 60px
+    line-height: 60px
+    padding: 0 30px
+    cursor: pointer
+    
+    &:hover
+      background-color: #f5f5f5
+    
+    
+    img 
+      position: relative
+      top: 2px
+      margin-left: 15px
+
+
+
+  // Social Icons
+  
+  .social
+    height: 60px
+    float: right
+    padding: 0 0 0 20px
+    line-height: 60px
+    border-left: 1px solid #eaeaea
+    
+    a
+      color: #989898
+      margin-right: 20px
+      display: inline-block
+      width: 30px
+      height: 30px
+      line-height: 30px
+      text-align: center
+      
+      &:hover
+        color: $dynastyRed

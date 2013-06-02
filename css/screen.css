@@ -34,8 +34,8 @@
  */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../font/fontawesome-webfont.eot?v=3.0.1");
-  src: url("../font/fontawesome-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("../font/fontawesome-webfont.woff?v=3.0.1") format("woff"), url("../font/fontawesome-webfont.ttf?v=3.0.1") format("truetype");
+  src: url("1-base/font/fontawesome-webfont.eot?v=3.0.1");
+  src: url("1-base/font/fontawesome-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("1-base/font/fontawesome-webfont.woff?v=3.0.1") format("woff"), url("1-base/font/fontawesome-webfont.ttf?v=3.0.1") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -426,20 +426,18 @@ a {
 a:hover, a:focus {
   color: #000; }
 
-/* Site Title, Nav, & Social */
 header {
   height: 60px;
   border-bottom: 1px solid #eaeaea;
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
   position: fixed;
   width: 100%;
   z-index: 99;
   top: 0; }
   header nav {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: white;
     position: absolute;
     bottom: -1px;
-    /*top: -60*4px;*/
     border-bottom: 1px solid #eaeaea;
     border-right: 1px solid #eaeaea;
     -webkit-transition: all 0.15s ease-out 0;
@@ -453,13 +451,13 @@ header {
       header nav ul li a {
         text-decoration: none;
         font-size: 16px;
-        letter-spacing: .2em;
+        letter-spacing: 0.2em;
         line-height: 60px;
         height: 60px;
         display: block; }
         header nav ul li a:hover {
           background-color: #ae1d22;
-          background-color: #f5f5f5;
+          background-color: whitesmoke;
           color: white;
           color: black; }
   header h1 {
@@ -468,7 +466,7 @@ header {
     padding: 0 30px;
     cursor: pointer; }
     header h1:hover {
-      background-color: #f5f5f5; }
+      background-color: whitesmoke; }
     header h1 img {
       position: relative;
       top: 2px;
@@ -490,7 +488,15 @@ header {
       header .social a:hover {
         color: #ae1d22; }
 
-/* Single Page Title (Persons Name) */
+footer {
+  width: 100%;
+  height: 205px;
+  background: url(../img/decoration-blank.jpg) center center no-repeat;
+  text-align: center;
+  margin: 150px 0 50px; }
+  footer h3 {
+    padding-top: 90px; }
+
 .title {
   text-align: center;
   padding-top: 70px; }
@@ -508,7 +514,6 @@ header {
     margin: 50px 0 0 0;
     width: 70%; }
 
-/* Person Summary */
 .summary {
   margin: 50px auto;
   width: 400px;
@@ -517,7 +522,7 @@ header {
   .summary p {
     padding: 0 20px; }
   .summary:before, .summary:after {
-    content: '';
+    content: "";
     width: 35px;
     height: 35px;
     position: absolute;
@@ -535,14 +540,14 @@ header {
   background-size: cover;
   position: relative; }
   .full-width-portrait:before {
-    content: '';
+    content: "";
     width: 100%;
     height: 3px;
     position: absolute;
     top: 0px;
     background-image: url(../img/zig-edge-top.png); }
   .full-width-portrait:after {
-    content: '';
+    content: "";
     width: 100%;
     height: 3px;
     position: absolute;
@@ -551,7 +556,6 @@ header {
   .full-width-portrait .aspect {
     padding-bottom: 66.6%; }
 
-/* Text Container Types */
 section.text-container {
   max-width: 540px;
   padding: 40px;
@@ -645,22 +649,10 @@ figure.four-by-four {
   margin: 50px auto;
   display: block; }
 
-footer {
-  width: 100%;
-  height: 205px;
-  background: url(../img/decoration-blank.jpg) center center no-repeat;
-  text-align: center;
-  margin-top: 150px;
-  margin-bottom: 50px; }
-  footer h3 {
-    padding-top: 90px; }
-
-/* Stupid Big*/
 @media only screen and (min-width: 1500px) {
   .title h2 {
     height: 250px;
     line-height: 200px; } }
-/* Smaller than standard 940 (devices and browsers) */
 @media only screen and (max-width: 939px) {
   .title h2 {
     height: 100px;
@@ -689,7 +681,7 @@ footer {
       display: none; }
     figure.four-by-four img {
       width: 48%;
-      float: none!important; }
+      float: none !important; }
     figure.four-by-four figcaption {
       position: relative;
       left: auto;
@@ -720,11 +712,6 @@ footer {
     width: 100%;
     white-space: normal;
     padding: 0px; } }
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-/* All Mobile Sizes (devices and browser) */
-/*767*/
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
   .summary {
     width: 280px; }
@@ -753,7 +740,7 @@ footer {
     width: 100%;
     margin-top: 60px;
     text-align: center;
-    padding: 0; }
+    padding: 0;
+    background: rgba(255, 255, 255, 0.95); }
     .social a {
       margin-left: 20px; } }
-/*479*/
