@@ -227,7 +227,10 @@ header {
     transition: all 0.15s ease-out 0;
     z-index: 10; }
     header nav ul li {
-      text-align: center; }
+      text-align: center;
+      height: 60px; }
+      header nav ul li .nav-spacer {
+        margin-top: 13px; }
       header nav ul li a {
         text-decoration: none;
         font-size: 16px;
