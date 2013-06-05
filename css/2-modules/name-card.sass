@@ -1,1 +1,101 @@
-// Here, I will build the name cards
+.family-link
+  position: relative
+  display: inline-block
+  color: $dynastyRed
+  text-decoration: none
+  
+.name-card-wrap
+  +position(absolute, 10px 0 0 0)
+  margin-top: 20px
+  //border: 1px solid #d7d7d7
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.3)
+  display: none
+  
+  .card-avatar
+    +size(260 175)
+    background-position: top center
+    display: block
+    position: relative
+  
+  .card-fade
+    @include linear-gradient(rgba(0,0,0,0) 80%, rgba(0,0,0,0.4))
+    +position(absolute, 0px 0px 0px 0px)
+    
+    &:after
+      content: ''
+      +position(absolute, 0px 0px 0px 0px)
+      background: url(../img/card-thumbs/card-deco.png) center 150px no-repeat
+  
+  .card-name
+    +position(absolute, 0 0px 0px 0px)
+    text-align: center
+    color: white
+    font-family: proxima
+    font-family: $helvetica
+    text-transform: uppercase
+  
+  .link-portion
+    background-color: #eee
+    text-align: center
+    color: #000
+    padding-bottom: 1px
+    
+    .relation
+      font-family: $helvetica
+      font-size: 11px
+      letter-spacing: 1px
+      padding: 10px
+    
+    .cta
+      font-family: proxima
+      font-size: 18px
+      margin: 0 10px 10px
+      padding: 10px
+      background-color: white
+      text-transform: capitalize
+      
+      &:hover
+        background-color: #666
+        color: white
+        box-shadow: 0px 0px 0px 1px white
+      
+.family-link:hover
+  color: $dynastyRed
+  
+  .name-card-wrap
+    display: block
+
+
+.flipInX
+  -webkit-backface-visibility: visible !important
+  -moz-backface-visibility: visible !important
+  -o-backface-visibility: visible !important
+  backface-visibility: visible !important
+  +animation-name(flipInX)
+  //+backface-visibility(visible !important)
+  
+  +perspective-origin(top)
+  +animation-fill-mode(both)
+  +animation-duration(300ms)
+
+
++keyframes(flipInX)
+  0%
+    +transform(perspective(400px) rotateX(90deg))
+    opacity: 0
+  
+  
+  40%
+    +transform(perspective(400px) rotateX(-10deg))
+  
+  
+  70%
+    +transform(perspective(400px) rotateX(10deg))
+  
+  
+  100%
+    +transform(perspective(400px) rotateX(0deg))
+    opacity: 1
+
+
+
