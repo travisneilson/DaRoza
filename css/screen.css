@@ -190,7 +190,7 @@ strong {
   font-weight: bold; }
 
 hr {
-  border: solid #dddddd;
+  border: solid #ddd;
   border-width: 1px 0 0;
   clear: both;
   margin: 10px 0 30px;
@@ -609,6 +609,12 @@ figure.four-by-four {
 
 .family-tree {
   width: 85%;
+  max-width: 1200px;
+  margin: 50px auto;
+  display: block; }
+
+.logo-footer {
+  width: 65%;
   max-width: 1200px;
   margin: 50px auto;
   display: block; }
