@@ -5,6 +5,7 @@ $(function() {
   jQuery(".title h2").fitText(1,{ minFontSize: '50px'});
   navStuff();
   linkCard();
+  redSlider();
 });
 
 function navStuff() {
@@ -45,6 +46,20 @@ function linkCard() {
         '</div>';
         
     $this.append($template);
+  });
+
+}
+
+function redSlider() {
+
+  $('.page-home .cta').hover(function() {
+    var $this = $(this),
+        $tint = $this.parents('.story-target').prev('.tint');
+    $tint.addClass('red');
+  }, function() {
+    var $this = $(this),
+        $tint = $this.parents('.story-target').prev('.tint');
+    $tint.removeClass('red');
   });
 
 }
