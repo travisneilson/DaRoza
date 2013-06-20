@@ -146,7 +146,7 @@ function slippySlider() {
   var thisUrl = location.protocol+'//'+location.hostname+location.pathname.slice(0, -10);
   $sliderImages.each(function() {
     var $this = $(this);
-    $('head').append('<link rel="prefetch" href="' + thisUrl + $this.data('bg-image') + '" />');  
+    $('head').append('<link rel="prefetch" href="' + thisUrl + '/' + $this.data('bg-image') + '" />');  
   });
   
   
