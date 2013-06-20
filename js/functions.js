@@ -6,6 +6,7 @@ $(function() {
   navStuff();
   linkCard();
   redSlider();
+  slippySlider();
 });
 
 function navStuff() {
@@ -63,3 +64,111 @@ function redSlider() {
   });
 
 }
+
+function slippySlider() {
+  
+  var $bgPhotoAlpha = $('.bg-photo-alpha'),
+      $bgPhotoOmega = $('.bg-photo-omega'),
+      $storyTarget = $('.story-target'),
+      
+      $belt = $('.image-belt'),
+      $sliderImages = $belt.find('img'),
+      
+      $textContainer = $('.text-container'),
+      $quote = $('.quote'),
+      $cta = $('.cta')
+      
+      randImageIndex = Math.floor(Math.random()*$sliderImages.length),
+      $randImg = $sliderImages.eq(randImageIndex);
+      
+  
+  // choose a rando image, make it the 'present' put the ones before it the 'past' and after the 'future'
+  $randImg.addClass('present').nextAll().removeClass('present past').addClass('future');
+  $randImg.addClass('present').prevAll().removeClass('present future').addClass('past');
+
+  
+  function content() {
+    var $present = $('.present'),
+        url = $present.data('url'),
+        bgImage = $present.data('bg-image'),
+        quote = $present.data('quote'),
+        cta = $present.data('cta');
+    
+    // Change the url of the link
+    $storyTarget.attr('href', url);
+    
+    // Fade out the text-container, fill it with new content, and fade it back
+    $textContainer.fadeOut(300);
+    setTimeout(function () {
+      $textContainer.find('.quote').text(quote).next().text(cta);
+      $textContainer.fadeIn(300);
+    }, 300)
+    
+    // Change the background
+    $bgPhotoOmega.hide().css('backgroundImage', 'url(' + bgImage + ')').fadeIn(300);
+    setTimeout(function() {
+      $bgPhotoAlpha.css('backgroundImage', 'url(' + bgImage + ')');
+      $bgPhotoOmega.hide();
+    }, 400)    
+    
+    // deactivate the right or left arrows if this is the end
+    if ($present.index() === 0) {
+      $('.icon-arrow-left').addClass('inactive');
+      $('.icon-arrow-right').removeClass('inactive');
+    } else if ($present.index() === $sliderImages.length-1) {
+      $('.icon-arrow-right').addClass('inactive');
+      $('.icon-arrow-left').removeClass('inactive');
+    } else {
+      $('.icon-arrow-left, .icon-arrow-right').removeClass('inactive');
+    }
+  }
+  content();
+  
+  
+  
+  $('.icon-arrow-left, .icon-arrow-right').click(function() {
+    event.preventDefault();
+    var $present = $('.present'),
+        $thisArrow = $(this);
+    
+    if ($thisArrow.hasClass('icon-arrow-right')) {
+      $present.removeClass('present').addClass('past').next().addClass('present').removeClass('future');
+      content();
+    } else {
+      $present.removeClass('present').addClass('future').prev().addClass('present').removeClass('past');
+      content();
+    }
+  
+  });
+  
+  
+  
+} // END slippySlider()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -285,13 +285,16 @@ header {
         color: #ae1d22; }
 
 footer {
-  width: 100%;
-  height: 205px;
-  background: url(../img/decoration-blank.jpg) center center no-repeat;
   text-align: center;
-  margin: 150px 0 50px; }
+  padding: 150px 0 50px; }
   footer h3 {
-    padding-top: 90px; }
+    padding-top: 50px; }
+
+.logo-footer {
+  width: 65%;
+  max-width: 1200px;
+  margin: 50px auto;
+  display: block; }
 
 .family-link {
   position: relative;
@@ -627,23 +630,17 @@ figure.four-by-four {
   margin: 50px auto;
   display: block; }
 
-.page-home, .home-slider .belt,
-.home-slider .belt > div[class^="slide"],
-.page-home body,
-.home-slider .belt body,
-.home-slider .belt > div[class^="slide"] body {
+.page-home,
+.page-home body {
   height: 100%;
   position: relative; }
 
 .home-slider {
-  padding-top: 61px;
+  margin-top: 61px;
+  position: relative;
   height: 80%;
-  background-color: lightpink; }
-  .home-slider .belt,
-  .home-slider .belt > div[class^="slide"] {
-    background-position: center;
-    background-size: cover; }
-  .home-slider div[class^="slide"] .tint {
+  overflow: hidden; }
+  .home-slider .tint {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -655,9 +652,18 @@ figure.four-by-four {
     -ms-transition: all 500ms;
     -o-transition: all 500ms;
     transition: all 500ms; }
-    .home-slider div[class^="slide"] .tint.red {
+    .home-slider .tint.red {
       background-color: rgba(104, 0, 0, 0.8); }
-  .home-slider div[class^="slide"] .story-target {
+  .home-slider .bg-photo-alpha,
+  .home-slider .bg-photo-omega {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-position: center;
+    background-size: cover; }
+  .home-slider .story-target {
     width: 370px;
     height: 420px;
     position: absolute;
@@ -668,62 +674,101 @@ figure.four-by-four {
     display: block;
     text-decoration: none;
     text-align: center; }
-    .home-slider div[class^="slide"] .story-target .portrait {
+  .home-slider .quote {
+    color: white;
+    font-face: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: 37px;
+    line-height: 1.1;
+    margin: 20px 0 30px; }
+  .home-slider .cta {
+    background-color: white;
+    display: inline-block;
+    font-family: proxima;
+    font-size: 20px;
+    padding: 3px 12px;
+    position: relative; }
+    .home-slider .cta:after {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 100%;
+      width: 0px;
+      height: 0px;
+      border: 19px solid transparent;
+      border-left: 10px solid white; }
+  .home-slider .image-belt {
+    width: 370px;
+    height: 245px;
+    height: 245px;
+    pointer-events: none;
+    position: relative;
+    -webkit-transition: all 0.15s ease-out 0;
+    -moz-transition: all 0.15s ease-out 0;
+    -ms-transition: all 0.15s ease-out 0;
+    -o-transition: all 0.15s ease-out 0;
+    transition: all 0.15s ease-out 0; }
+    .home-slider .image-belt img {
       width: 370px;
       height: 245px;
-      position: relative; }
-      .home-slider div[class^="slide"] .story-target .portrait:before, .home-slider div[class^="slide"] .story-target .portrait:after {
-        content: "";
-        width: 72px;
-        height: 311px;
-        display: block;
-        position: absolute;
-        top: -33px;
-        left: -75px;
-        background: url(../img/slider-deco.png) 0px 0px no-repeat; }
-      .home-slider div[class^="slide"] .story-target .portrait:after {
-        left: auto;
-        right: -75px;
-        background-position: -72px; }
-      .home-slider div[class^="slide"] .story-target .portrait [class^="icon-arrow"] {
-        color: rgba(255, 255, 255, 0.5);
-        font-size: 60px;
-        display: block;
-        width: 75px;
-        height: 75px;
-        line-height: 75px;
-        position: absolute;
-        top: 50%;
-        left: -85px;
-        margin-top: -37.5px;
-        text-align: center;
-        z-index: 3;
-        text-align: right;
-        -webkit-transition: all 200ms;
-        -moz-transition: all 200ms;
-        -ms-transition: all 200ms;
-        -o-transition: all 200ms;
-        transition: all 200ms; }
-        .home-slider div[class^="slide"] .story-target .portrait [class^="icon-arrow"].icon-arrow-right {
-          left: auto;
-          right: -85px;
-          text-align: left; }
-        .home-slider div[class^="slide"] .story-target .portrait [class^="icon-arrow"]:hover {
-          font-size: 70px;
-          color: white; }
-    .home-slider div[class^="slide"] .story-target .quote {
-      color: white;
-      font-face: Georgia, Cambria, "Times New Roman", Times, serif;
-      font-style: italic;
-      font-size: 37px;
-      line-height: 1.1;
-      margin: 20px 0 30px; }
-    .home-slider div[class^="slide"] .story-target .cta {
-      background-color: white;
-      display: inline-block;
-      font-family: proxima;
-      font-size: 20px;
-      padding: 3px 12px; }
+      position: absolute;
+      top: 0px;
+      -webkit-transition: all 500ms;
+      -moz-transition: all 500ms;
+      -ms-transition: all 500ms;
+      -o-transition: all 500ms;
+      transition: all 500ms; }
+      .home-slider .image-belt img.past {
+        left: -370px;
+        opacity: 0; }
+      .home-slider .image-belt img.present {
+        left: 0px;
+        opacity: 1; }
+      .home-slider .image-belt img.future {
+        left: 370px;
+        opacity: 0; }
+    .home-slider .image-belt:before, .home-slider .image-belt:after {
+      content: "";
+      width: 72px;
+      height: 311px;
+      display: block;
+      position: absolute;
+      top: -33px;
+      left: -75px;
+      background: url(../img/slider-deco.png) 0px 0px no-repeat;
+      pointer-events: none; }
+    .home-slider .image-belt:after {
+      left: auto;
+      right: -75px;
+      background-position: -72px; }
+  .home-slider [class^="icon-arrow"] {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 60px;
+    display: block;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    position: absolute;
+    top: 85px;
+    left: -85px;
+    text-align: center;
+    z-index: 3;
+    text-align: right;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms; }
+    .home-slider [class^="icon-arrow"].icon-arrow-right {
+      left: auto;
+      right: -85px;
+      text-align: left; }
+    .home-slider [class^="icon-arrow"]:hover {
+      font-size: 70px;
+      color: white; }
+    .home-slider [class^="icon-arrow"].inactive {
+      pointer-events: none;
+      opacity: 0; }
 
 @media only screen and (min-width: 1500px) {
   .title h2 {

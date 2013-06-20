@@ -5,94 +5,151 @@
   height: 100%
   position: relative
 
+// Slider
 .home-slider
-  padding-top: 61px
+  margin-top: 61px
+  position: relative
   height: 80%
-  background-color: lightpink
+  overflow: hidden
   
-  .belt,
-  .belt > div[class^="slide"]
-    @extend .page-home
+  .tint
+    +position(absolute, 0px 0px 0px 0px)
+    background-color: rgba(0,0,0,0.7)
+    +transition(all 500ms)
+    
+    &.red
+      background-color: rgba(104, 0, 0, 0.8)
+  
+  .bg-photo-alpha,
+  .bg-photo-omega
+    +position(absolute, 0px 0px 0px 0px)
     background-position: center
     background-size: cover
-
-  div[class^="slide"]
+  
+  .story-target
+    $width: 370
+    $height: 420
+    +size($width $height)
+    +position(absolute, 50% 0 0 50%)
+    margin-top: -($height/2)+px
+    margin-left: -($width/2)+px
+    display: block
+    
+    text-decoration: none
+    text-align: center
+    
+  .quote
+    color: white
+    font-face: $georgia
+    font-style: italic
+    font-size: 37px
+    line-height: 1.1
+    margin: 20px 0 30px
+  
+  .cta
+    background-color: white
+    display: inline-block
+    font-family: proxima
+    font-size: 20px
+    padding: 3px 12px
+    position: relative
+    
+    &:after 
+      content: ''
+      +position(absolute, 0px 0 0 100%)
+      +size(0)
+      border: 19px solid transparent
+      border-left: 10px solid white
+  
 
     
-    .tint
-      +position(absolute, 0px 0px 0px 0px)
-      background-color: rgba(0,0,0,0.7)
+  .image-belt
+    $imageWidth: 370px
+    $imageHeight: 245px
+    +size($imageWidth $imageHeight)
+    height: $imageHeight
+    pointer-events: none
+    position: relative
+    //+position(absolute, 0px 0 0 0px)
+    +transition()
+    
+    img
+      +size($imageWidth $imageHeight)
+      +position(absolute, 0px 0 0 0)
       +transition(all 500ms)
       
-      &.red
-        background-color: rgba(104, 0, 0, 0.8)
-    
-    .story-target
-      $width: 370
-      $height: 420
-      +size($width $height)
-      +position(absolute, 50% 0 0 50%)
-      margin-top: -($height/2)+px
-      margin-left: -($width/2)+px
+      &.past
+        left: -$imageWidth
+        opacity: 0
+
+      &.present 
+        left: 0px
+        opacity: 1
+
+      &.future
+        left: $imageWidth
+        opacity: 0
+          
+    &:before,
+    &:after
+      content: ''
+      +size(72 311)
       display: block
+      +position(absolute, -33px 0 0 -75px)
+      background: url(../img/slider-deco.png) 0px 0px no-repeat
+      pointer-events: none
+    
+    &:after
+      left: auto
+      right: -75px
+      background-position: -72px
       
-      text-decoration: none
-      text-align: center
       
-      .portrait
-        +size($width 245)
-        position: relative
-        
-        &:before,
-        &:after
-          content: ''
-          +size(72 311)
-          display: block
-          +position(absolute, -33px 0 0 -75px)
-          background: url(../img/slider-deco.png) 0px 0px no-repeat
-        
-        &:after
-          left: auto
-          right: -75px
-          background-position: -72px
-        
-        [class^="icon-arrow"]
-          color: rgba(255,255,255,0.5)
-          font-size: 60px
-          display: block
-          +size(75)
-          line-height: 75px
-          +position(absolute, 50% 0 0 -85px)
-          margin-top: -37.5px
-          text-align: center
-          z-index: 3
-          text-align: right
-          +transition(all 200ms)
-          
-          &.icon-arrow-right
-            left: auto
-            right: -85px
-            text-align: left
-          
-          &:hover
-            font-size: 70px
-            color: rgba(255,255,255,1)
-            //color: $dynastyRed
-          
-      .quote
-        color: white
-        font-face: $georgia
-        font-style: italic
-        font-size: 37px
-        line-height: 1.1
-        margin: 20px 0 30px
-      
-      .cta
-        background-color: white
-        display: inline-block
-        font-family: proxima
-        font-size: 20px
-        padding: 3px 12px
-        
-      
+    
+  [class^="icon-arrow"]
+    color: rgba(255,255,255,0.5)
+    font-size: 60px
+    display: block
+    +size(75)
+    line-height: 75px
+    +position(absolute, 85px 0 0 -85px)
+    text-align: center
+    z-index: 3
+    text-align: right
+    +transition(all 200ms)
+    
+    &.icon-arrow-right
+      left: auto
+      right: -85px
+      text-align: left
+    
+    &:hover
+      font-size: 70px
+      color: rgba(255,255,255,1)
+      //color: $dynastyRed
+    
+    &.inactive
+      pointer-events: none
+      opacity: 0
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
       
