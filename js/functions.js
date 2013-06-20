@@ -82,10 +82,23 @@ function slippySlider() {
       $randImg = $sliderImages.eq(randImageIndex);
       
   
+  // Pre-fetch the big background images
+  // <link rel="prefetch" href="http://daker.me/assets/images/avatar.png" />
+  
+  var thisUrl = location.protocol+'//'+location.hostname+location.pathname.slice(0, -10);
+  $sliderImages.each(function() {
+    var $this = $(this);
+    $('head').append('<link rel="prefetch" href="' + thisUrl + $this.data('bg-image') + '" />');  
+  });
+  
+  
+      console.log(thisUrl);
+  
+  
   // choose a rando image, make it the 'present' put the ones before it the 'past' and after the 'future'
   $randImg.addClass('present').nextAll().removeClass('present past').addClass('future');
   $randImg.addClass('present').prevAll().removeClass('present future').addClass('past');
-
+  
   
   function content() {
     var $present = $('.present'),
