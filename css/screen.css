@@ -865,4 +865,20 @@ figure.four-by-four {
     padding: 0;
     background: rgba(255, 255, 255, 0.95); }
     .social a {
-      margin-left: 20px; } }
+      margin-left: 20px; }
+
+  .home-slider [class^="icon-arrow"] {
+    top: -80px;
+    left: 25%; }
+
+  .home-slider [class^="icon-arrow"].icon-arrow-right {
+    right: 25%; }
+
+  .home-slider .image-belt:before,
+  .home-slider .image-belt:after {
+    display: none; }
+
+  .home-slider {
+    height: 800px; }
+    .home-slider .text-container {
+      margin: 0 20px; } }
