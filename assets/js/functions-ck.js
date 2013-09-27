@@ -89,17 +89,18 @@ function linkCard() {
 
   $('.family-link').each(function() {
     var $this = $(this),
-        $hyphenName = $this.attr('href').slice(0, -5),
+        $hyphenName = $this.attr('href').slice(1),
         $splitName = $hyphenName.split('-'),
+        $relationship = $this.data('relationship'),
         $currPageName = $('.title h2').text().split(' '),
-        $thumbUrl = 'img/card-thumbs/'+ $hyphenName +'.jpg',
+        $thumbUrl = '/assets/img/card-thumbs/'+ $hyphenName +'.jpg',
         $template = '<div class="name-card-wrap flipInX">' +
           '<div class="card-avatar" style="background-image: url('+ $thumbUrl +')">' +
             '<div class="card-fade"></div>' +
             '<div class="card-name">'+ $splitName[0] +' '+ $splitName[1] +'</div>' + 
           '</div>' +
           '<div class="link-portion">' +
-            '<div class="relation">('+ $currPageName[0] +'\'s sister)</div>' +
+            '<div class="relation">('+ $currPageName[0] +'\'s '+ $relationship +')</div>' +
             '<div class="cta">Read '+ $splitName[0] +'\'s Story</div>' +
           '</div>' +
         '</div>';
