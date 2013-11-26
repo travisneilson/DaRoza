@@ -65,6 +65,7 @@ $(function() {
   linkCard();
   redSlider();
   slippySlider();
+  relationTitle();
 });
 
 function navStuff() {
@@ -221,7 +222,17 @@ function slippySlider() {
 
 
 
-
+function relationTitle() {
+  $('.relatives-grid > a').each(function() {
+    var $this = $(this),
+        relation = $this.data('relation');
+        
+    var template = '<div class="relative-title">Read '+ relation +'\'s Story</div>';
+    
+    $this.append(template);
+    
+  });
+}
 
 
 
