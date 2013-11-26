@@ -235,7 +235,8 @@ function relationTitle() {
 }
 
 
-
+var is_touch_device = 'ontouchstart' in document.documentElement;
+if(is_touch_device) $('html').addClass('touch');
 
 
 

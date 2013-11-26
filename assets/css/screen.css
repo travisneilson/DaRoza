@@ -680,7 +680,7 @@ figure.four-by-four {
       background-image: url(/assets/img/relative-title-deco.png); }
     .relatives .relatives-grid .relative-title:after {
       background-position: top right; }
-  .relatives .relatives-grid [class*="relatives-grid-unit-"]:hover .relative-title {
+  .relatives .relatives-grid [class*="relatives-grid-unit-"]:hover .relative-title, .touch .relatives .relatives-grid [class*="relatives-grid-unit-"] .relative-title {
     opacity: 0.9; }
 
 .family-tree {
