@@ -31,31 +31,24 @@
   p
     padding: 0 20px
   
+  
+  // The images here need to be 68px squared. Is retnas, ok?
+  // They are called inline. See Greg's example. ok??
   .summary-icon-1
-    font-size: 34px
-    color: $dynastyRed
     display: block
     +position(absolute, 50% -100px 0 0)
     line-height: 1
     margin-top: -17px
+    +size(34)
+    background:
+      position: center
+      repeat: no-repeat
+      size: 34px 34px
   
   .summary-icon-2
     @extend .summary-icon-1
     left: -100px
     right: auto
-  
-  /*  
-    &:before, &:after
-      content: ''
-      @include size(35)
-      @include position(absolute, 50% -100px 0 0)
-      margin-top: -17px
-      background: url(../img/red-deer.svg) center center no-repeat
-      background-size: contain
-    
-    &:before
-      left: -100px
-      right: auto
 
 
 
