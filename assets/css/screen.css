@@ -605,7 +605,7 @@ figure.four-by-four {
       width: 85px;
       margin-left: -42px; }
   figure.four-by-four figcaption {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
     top: 50%;
     right: 30%;
@@ -667,19 +667,6 @@ figure.four-by-four {
     transition: 1s;
     opacity: 0;
     pointer-events: none; }
-    .relatives .relatives-grid .relative-title:before, .relatives .relatives-grid .relative-title:after {
-      content: "";
-      display: inline-block;
-      width: 68px;
-      height: 31px;
-      margin: 0 20px;
-      vertical-align: bottom;
-      background-repeat: no-repeat;
-      background-position: top left;
-      background-size: auto 100%;
-      background-image: url(/assets/img/relative-title-deco.png); }
-    .relatives .relatives-grid .relative-title:after {
-      background-position: top right; }
   .relatives .relatives-grid [class*="relatives-grid-unit-"]:hover .relative-title, .touch .relatives .relatives-grid [class*="relatives-grid-unit-"] .relative-title {
     opacity: 0.9; }
 
