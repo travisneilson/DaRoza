@@ -626,7 +626,7 @@ figure.four-by-four {
   .relatives h3 {
     padding-top: 50px; }
   .relatives .relatives-grid .relatives-grid-unit-1, .relatives .relatives-grid .relatives-grid-unit-2, .relatives .relatives-grid .relatives-grid-unit-3 {
-    background-color: pink;
+    background-color: #cccccc;
     background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -648,7 +648,7 @@ figure.four-by-four {
     display: block;
     position: relative;
     width: 100%;
-    padding-top: 60%; }
+    padding-top: 50%; }
   .relatives .relatives-grid .relative-title {
     position: absolute;
     right: 0px;
