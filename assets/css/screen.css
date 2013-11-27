@@ -257,7 +257,7 @@ header {
   header h1 {
     height: 60px;
     line-height: 60px;
-    padding: 0 30px;
+    padding: 0 50px;
     cursor: pointer; }
     header h1:hover {
       background-color: #fafafa; }

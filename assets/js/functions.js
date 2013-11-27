@@ -20,7 +20,7 @@ function navStuff() {
   
   $nav.click(function() {
     if (!$nav.hasClass('closed')) {
-      $nav.css('bottom', '-1px').addClass('closed');
+      $nav.css('bottom', '0px').addClass('closed');
     } else {
       $nav.css('bottom', '-' + navItemNum*navItemHeight + 'px').removeClass('closed');
     }
