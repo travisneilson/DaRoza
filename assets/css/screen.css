@@ -221,7 +221,7 @@ a:hover, a:focus {
 
 header {
   height: 60px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   position: fixed;
   width: 100%;
   z-index: 99;
@@ -249,7 +249,7 @@ header {
         display: block; }
         header nav ul li a:hover {
           background-color: #ae1d22;
-          background-color: whitesmoke;
+          background-color: #fafafa;
           color: white;
           color: black; }
   header h1 {
