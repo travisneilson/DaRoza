@@ -312,7 +312,8 @@ footer {
   top: 10px;
   margin-top: 20px;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
-  display: none; }
+  display: none;
+  background-color: white; }
   .name-card-wrap .card-avatar {
     width: 175px;
     height: 175px;
