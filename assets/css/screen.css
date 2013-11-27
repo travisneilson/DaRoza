@@ -698,13 +698,13 @@ figure.four-by-four {
     bottom: 0px;
     left: 0px;
     background-color: rgba(0, 0, 0, 0.7);
-    -webkit-transition: all 500ms;
-    -moz-transition: all 500ms;
-    -ms-transition: all 500ms;
-    -o-transition: all 500ms;
-    transition: all 500ms; }
+    -webkit-transition: all 1000ms;
+    -moz-transition: all 1000ms;
+    -ms-transition: all 1000ms;
+    -o-transition: all 1000ms;
+    transition: all 1000ms; }
     .home-slider .tint.red {
-      background-color: rgba(104, 0, 0, 0.8); }
+      background-color: rgba(104, 0, 0, 0.5); }
   .home-slider .bg-photo-alpha,
   .home-slider .bg-photo-omega {
     position: absolute;
@@ -713,7 +713,8 @@ figure.four-by-four {
     bottom: 0px;
     left: 0px;
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    -webkit-filter: blur(5px); }
   .home-slider .story-target {
     width: 370px;
     height: 420px;
@@ -742,7 +743,7 @@ figure.four-by-four {
     padding: 20px 30px;
     color: white;
     position: relative;
-    transition: 0.3s; }
+    transition: 0.2s; }
   .home-slider .cta:hover {
     background-color: white;
     color: #ae1d22; }
@@ -767,13 +768,15 @@ figure.four-by-four {
       -ms-transition: all 500ms;
       -o-transition: all 500ms;
       transition: all 500ms; }
-      .home-slider .image-belt img.past {
+    .home-slider .image-belt img:hover {
+      transform: scale(1.2); }
+      .home-slider .image-belt img:hover.past {
         left: -370px;
         opacity: 0; }
-      .home-slider .image-belt img.present {
+      .home-slider .image-belt img:hover.present {
         left: 0px;
         opacity: 1; }
-      .home-slider .image-belt img.future {
+      .home-slider .image-belt img:hover.future {
         left: 370px;
         opacity: 0; }
     .home-slider .image-belt:before, .home-slider .image-belt:after {

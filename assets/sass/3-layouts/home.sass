@@ -15,16 +15,17 @@
   .tint
     +position(absolute, 0px 0px 0px 0px)
     background-color: rgba(0,0,0,0.7)
-    +transition(all 500ms)
+    +transition(all 1000ms)
     
     &.red
-      background-color: rgba(104, 0, 0, 0.8)
+      background-color: rgba(104, 0, 0, 0.5)
   
   .bg-photo-alpha,
   .bg-photo-omega
     +position(absolute, 0px 0px 0px 0px)
     background-position: center
     background-size: cover
+    -webkit-filter: blur(5px)
   
   .story-target
     $width: 370
@@ -56,7 +57,7 @@
     padding: 20px 30px
     color: white
     position: relative
-    transition: (.3s)  
+    transition: (.2s)  
   
   .cta:hover
     background-color: white
@@ -77,6 +78,9 @@
       +position(absolute, 0px 0 0 0)
       +transition(all 500ms)
       
+    img:hover
+      transform: scale(1.2)
+        
       &.past
         left: -$imageWidth
         opacity: 0
