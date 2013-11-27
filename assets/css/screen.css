@@ -733,21 +733,16 @@ figure.four-by-four {
     line-height: 1.1;
     margin: 20px 0 30px; }
   .home-slider .cta {
-    background-color: white;
+    background-color: #ae1d22;
     display: inline-block;
+    border-radius: 3px;
     font-family: proxima;
     font-size: 20px;
-    padding: 3px 12px;
-    position: relative; }
-    .home-slider .cta:after {
-      content: "";
-      position: absolute;
-      top: 0px;
-      left: 100%;
-      width: 0px;
-      height: 0px;
-      border: 19px solid transparent;
-      border-left: 10px solid white; }
+    padding: 25px;
+    position: relative;
+    transition: 0.3s; }
+  .home-slider .cta:hover {
+    background-color: white; }
   .home-slider .image-belt {
     width: 370px;
     height: 245px;

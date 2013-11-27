@@ -47,21 +47,17 @@
     margin: 20px 0 30px
   
   .cta
-    background-color: white
+    background-color: #ae1d22
     display: inline-block
+    border-radius: 3px
     font-family: proxima
     font-size: 20px
-    padding: 3px 12px
+    padding: 25px
     position: relative
-    
-    &:after 
-      content: ''
-      +position(absolute, 0px 0 0 100%)
-      +size(0)
-      border: 19px solid transparent
-      border-left: 10px solid white
+    transition: (.3s)  
   
-
+  .cta:hover
+    background-color: white
     
   .image-belt
     $imageWidth: 370px
