@@ -311,7 +311,7 @@ footer {
   position: absolute;
   top: 10px;
   margin-top: 20px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
   display: none; }
   .name-card-wrap .card-avatar {
     width: 260px;
@@ -351,7 +351,7 @@ footer {
     font-weight: 300;
     text-transform: uppercase; }
   .name-card-wrap .link-portion {
-    background-color: #eeeeee;
+    background-color: #fafafa;
     text-align: center;
     color: black;
     padding-bottom: 1px; }
@@ -367,12 +367,12 @@ footer {
       font-size: 18px;
       margin: 0 10px 10px;
       padding: 10px;
-      background-color: white;
+      color: white;
+      background-color: #8c0a0e;
       text-transform: capitalize; }
       .name-card-wrap .link-portion .cta:hover {
         background-color: #666666;
-        color: white;
-        box-shadow: 0px 0px 0px 1px white; }
+        color: #ae1d22; }
 
 .family-link:hover {
   color: #ae1d22; }
