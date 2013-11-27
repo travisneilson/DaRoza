@@ -9,15 +9,16 @@
   margin-top: 20px
   box-shadow: 0px 2px 0px rgba(0,0,0,0.3)
   display: none
-  background-color: white
+  background-color: #fafafa
   
   .card-avatar
-    +size(175 175)
+    +size(125 125)
     background-position: top center
     display: block
     position: relative
     border-radius: 50%
     margin: 25px
+    background-size: cover
   	
   .card-fade
     
@@ -27,9 +28,9 @@
       background: url(../img/card-thumbs/card-deco.png) center 150px no-repeat
   
   .card-name
-    +position(absolute, 0 0px 0px 0px)
+    +position(absolute, 0 0px -25px 0px)
     text-align: center
-    color: white
+    color: #333333
     font-family: proxima
     font-weight: 300
     //font-family: $helvetica
