@@ -668,9 +668,10 @@ figure.four-by-four {
     transition: 0.3s;
     opacity: 0;
     margin: 10px;
-    z-index: 99; }
+    z-index: 99;
+    border-radius: 3px; }
   .relatives .relatives-grid [class*="relatives-grid-unit-"]:hover .relative-title, .touch .relatives .relatives-grid [class*="relatives-grid-unit-"] .relative-title {
-    opacity: 0.9; }
+    opacity: 0.95; }
   .relatives .relatives-grid .relative-title:hover {
     background: #8c0a0e; }
 
