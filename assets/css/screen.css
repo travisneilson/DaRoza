@@ -643,8 +643,7 @@ figure.four-by-four {
   .relatives .relatives-grid .relatives-grid-unit-3 {
     width: 100%; }
   .relatives .relatives-grid [class*="relatives-grid-unit-"]:hover {
-    background-size: 105%;
-    -webkit-filter: blur(5px); }
+    background-size: 103%; }
   .relatives .relatives-grid [class*="relatives-grid-unit-"]:after {
     content: "";
     display: block;
