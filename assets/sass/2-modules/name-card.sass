@@ -69,36 +69,4 @@
     display: block
 
 
-.flipInX
-  -webkit-backface-visibility: visible !important
-  -moz-backface-visibility: visible !important
-  -o-backface-visibility: visible !important
-  backface-visibility: visible !important
-  +animation-name(flipInX)
-  //+backface-visibility(visible !important)
-  
-  +perspective-origin(top)
-  +animation-fill-mode(both)
-  +animation-duration(300ms)
-
-
-+keyframes(flipInX)
-  0%
-    +transform(perspective(400px) rotateX(90deg))
-    opacity: 0
-  
-  
-  40%
-    +transform(perspective(400px) rotateX(-10deg))
-  
-  
-  70%
-    +transform(perspective(400px) rotateX(10deg))
-  
-  
-  100%
-    +transform(perspective(400px) rotateX(0deg))
-    opacity: 1
-
-
 
