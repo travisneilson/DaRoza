@@ -40,8 +40,7 @@ function linkCard() {
         $template = '<div class="name-card-wrap flipInX">' +
           '<div class="card-avatar" style="background-image: url('+ $thumbUrl +')">' +
             '<div class="card-fade"></div>' +
-            '<div class="card-name">'+ $splitName[0] +' '+ $splitName[1] +'</div>' + 
-          '</div>' +
+            
           '<div class="link-portion">' +
             '<div class="relation">('+ $currPageName[0] +'\'s '+ $relationship +')</div>' +
             '<div class="cta">Read '+ $splitName[0] +'\'s Story</div>' +
