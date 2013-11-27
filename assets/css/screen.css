@@ -861,7 +861,8 @@ figure.four-by-four {
     width: 100%; }
 
   header h1 {
-    text-align: center; }
+    text-align: center;
+    font-size: 12px; }
     header h1 span {
       display: none; }
     header h1 img {
