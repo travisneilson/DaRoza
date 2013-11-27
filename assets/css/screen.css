@@ -221,18 +221,14 @@ a:hover, a:focus {
 
 header {
   height: 60px;
-  border-bottom: 1px solid #eaeaea;
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   position: fixed;
   width: 100%;
   z-index: 99;
   top: 0; }
   header nav {
-    background-color: white;
     position: absolute;
     bottom: -1px;
-    border-bottom: 1px solid #eaeaea;
-    border-right: 1px solid #eaeaea;
     -webkit-transition: all 0.15s ease-out 0;
     -moz-transition: all 0.15s ease-out 0;
     -ms-transition: all 0.15s ease-out 0;
@@ -704,7 +700,7 @@ figure.four-by-four {
     -o-transition: all 1000ms;
     transition: all 1000ms; }
     .home-slider .tint.red {
-      background-color: rgba(104, 0, 0, 0.5); }
+      background-color: rgba(104, 0, 0, 0.9); }
   .home-slider .bg-photo-alpha,
   .home-slider .bg-photo-omega {
     position: absolute;
