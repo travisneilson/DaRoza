@@ -671,6 +671,8 @@ figure.four-by-four {
     margin: 10px; }
   .relatives .relatives-grid [class*="relatives-grid-unit-"]:hover .relative-title, .touch .relatives .relatives-grid [class*="relatives-grid-unit-"] .relative-title {
     opacity: 0.9; }
+  .relatives .relatives-grid .relative-title:hover {
+    background: black; }
 
 .family-tree {
   width: 85%;
