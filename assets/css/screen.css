@@ -223,7 +223,7 @@ header {
   height: 60px;
   position: fixed;
   width: 100%;
-  z-index: 99;
+  z-index: 200;
   top: 0; }
   header nav {
     background: #1c1c1c;
