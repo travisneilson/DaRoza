@@ -713,8 +713,7 @@ figure.four-by-four {
     bottom: 0px;
     left: 0px;
     background-position: center;
-    background-size: cover;
-    -webkit-filter: blur(5px); }
+    background-size: cover; }
   .home-slider .story-target {
     width: 370px;
     height: 420px;
@@ -768,15 +767,13 @@ figure.four-by-four {
       -ms-transition: all 500ms;
       -o-transition: all 500ms;
       transition: all 500ms; }
-    .home-slider .image-belt img:hover {
-      transform: scale(1.2); }
-      .home-slider .image-belt img:hover.past {
+      .home-slider .image-belt img.past {
         left: -370px;
         opacity: 0; }
-      .home-slider .image-belt img:hover.present {
+      .home-slider .image-belt img.present {
         left: 0px;
         opacity: 1; }
-      .home-slider .image-belt img:hover.future {
+      .home-slider .image-belt img.future {
         left: 370px;
         opacity: 0; }
     .home-slider .image-belt:before, .home-slider .image-belt:after {

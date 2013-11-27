@@ -25,7 +25,6 @@
     +position(absolute, 0px 0px 0px 0px)
     background-position: center
     background-size: cover
-    -webkit-filter: blur(5px)
   
   .story-target
     $width: 370
@@ -77,10 +76,7 @@
       +size($imageWidth $imageHeight)
       +position(absolute, 0px 0 0 0)
       +transition(all 500ms)
-      
-    img:hover
-      transform: scale(1.2)
-        
+              
       &.past
         left: -$imageWidth
         opacity: 0
