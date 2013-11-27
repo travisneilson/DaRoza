@@ -351,7 +351,8 @@ footer {
       font-weight: 300;
       font-size: 11px;
       letter-spacing: 1px;
-      padding: 10px; }
+      padding: 10px;
+      margin-bottom: 15px; }
     .name-card-wrap .link-portion .cta {
       font-family: proxima;
       font-size: 18px;
