@@ -128,9 +128,9 @@ figure.image-and-pull-quote
   figcaption
     width: 100%
     margin: 0 auto
-    padding: 10px
+    padding: 20px
     position: relative
-    top: -63px
+    top: -82px
 
 figcaption
   text-align: center
@@ -195,7 +195,7 @@ figure.four-by-four
       display: block
       float: left
       position: relative
-      +transition
+      +transition(2s)
           
     .relatives-grid-unit-2
       @extend .relatives-grid-unit-1
@@ -224,9 +224,10 @@ figure.four-by-four
         family: proxima
         size: 20px
       padding: 15px 0
-      +transition(1s)
+      +transition(.2s)
       opacity: 0
       pointer-events: none
+      
             
     [class*="relatives-grid-unit-"]:hover .relative-title,
     .touch & [class*="relatives-grid-unit-"] .relative-title
@@ -238,4 +239,6 @@ figure.four-by-four
   max-width: 1200px
   margin: 50px auto
   display: block
+  
+  
   
