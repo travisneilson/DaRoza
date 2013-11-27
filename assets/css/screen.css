@@ -226,7 +226,7 @@ header {
   z-index: 99;
   top: 0; }
   header nav {
-    background: rgba(255, 255, 255, 0.95);
+    background: #1c1c1c;
     position: absolute;
     bottom: 0px;
     -webkit-transition: all 0.15s ease-out 0;
@@ -247,7 +247,8 @@ header {
         letter-spacing: 0.2em;
         line-height: 60px;
         height: 60px;
-        display: block; }
+        display: block;
+        color: white; }
         header nav ul li a:hover {
           background-color: #ae1d22;
           background-color: #fafafa;
@@ -259,7 +260,8 @@ header {
     line-height: 60px;
     padding: 0 50px;
     cursor: pointer;
-    text-align: center; }
+    text-align: center;
+    background-color: white; }
     header h1:hover {
       background-color: #fafafa; }
     header h1 img {
