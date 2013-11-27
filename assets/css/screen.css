@@ -667,12 +667,12 @@ figure.four-by-four {
     -o-transition: 0.3s;
     transition: 0.3s;
     opacity: 0;
-    pointer-events: none;
-    margin: 10px; }
+    margin: 10px;
+    z-index: 99; }
   .relatives .relatives-grid [class*="relatives-grid-unit-"]:hover .relative-title, .touch .relatives .relatives-grid [class*="relatives-grid-unit-"] .relative-title {
     opacity: 0.9; }
   .relatives .relatives-grid .relative-title:hover {
-    background: black; }
+    background: #8c0a0e; }
 
 .family-tree {
   width: 85%;
