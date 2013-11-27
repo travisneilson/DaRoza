@@ -321,6 +321,46 @@ footer {
     position: relative;
     border-radius: 50%;
     margin: 25px; }
+  .name-card-wrap .card-fade:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: url(../img/card-thumbs/card-deco.png) center 150px no-repeat; }
+  .name-card-wrap .card-name {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    color: white;
+    font-family: proxima;
+    font-weight: 300;
+    text-transform: uppercase; }
+  .name-card-wrap .link-portion {
+    background-color: #fafafa;
+    text-align: center;
+    color: black;
+    padding-bottom: 1px; }
+    .name-card-wrap .link-portion .relation {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: proxima;
+      font-weight: 300;
+      font-size: 11px;
+      letter-spacing: 1px;
+      padding: 10px; }
+    .name-card-wrap .link-portion .cta {
+      font-family: proxima;
+      font-size: 18px;
+      margin: 0 10px 10px;
+      padding: 10px;
+      color: white;
+      background-color: #8c0a0e;
+      text-transform: capitalize; }
+      .name-card-wrap .link-portion .cta:hover {
+        background-color: #ae1d22; }
 
 .family-link:hover {
   color: #ae1d22; }
