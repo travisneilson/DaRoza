@@ -227,6 +227,7 @@ header {
   z-index: 99;
   top: 0; }
   header nav {
+    background-color: white;
     position: absolute;
     bottom: -1px;
     -webkit-transition: all 0.15s ease-out 0;
