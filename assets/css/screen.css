@@ -640,11 +640,13 @@ figure.four-by-four {
     -moz-transition: 1s;
     -ms-transition: 1s;
     -o-transition: 1s;
-    transition: 1s; }
+    transition: 1s;
+    -webkit-filter: brightness(50%); }
   .relatives .relatives-grid .relatives-grid-unit-3 {
     width: 100%; }
   .relatives .relatives-grid [class*="relatives-grid-unit-"]:hover {
-    background-size: 103%; }
+    background-size: 103%;
+    -webkit-filter: brightness(100%); }
   .relatives .relatives-grid [class*="relatives-grid-unit-"]:after {
     content: "";
     display: block;

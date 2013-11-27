@@ -196,6 +196,7 @@ figure.four-by-four
       float: left
       position: relative
       +transition(1s)
+      -webkit-filter: brightness(50%)
           
     .relatives-grid-unit-2
       @extend .relatives-grid-unit-1
@@ -207,6 +208,7 @@ figure.four-by-four
     [class*="relatives-grid-unit-"]
       &:hover
         background-size: 103%
+        -webkit-filter: brightness(100%)
       
       &:after
         content: ''
