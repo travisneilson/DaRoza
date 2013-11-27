@@ -472,7 +472,7 @@ footer {
 
 .title {
   text-align: center;
-  padding-top: 70px; }
+  padding-top: 30px; }
   .title h2 {
     font-size: 90px;
     padding: 0 80px;
@@ -692,7 +692,7 @@ figure.four-by-four {
 .home-slider {
   margin-top: 61px;
   position: relative;
-  height: 80%;
+  height: 60%;
   overflow: hidden; }
   .home-slider .tint {
     position: absolute;
