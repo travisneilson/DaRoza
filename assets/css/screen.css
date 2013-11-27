@@ -568,7 +568,7 @@ figure.image-and-pull-quote {
   figure.image-and-pull-quote figcaption {
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 0px;
     position: relative;
     top: -82px; }
 
@@ -634,11 +634,11 @@ figure.four-by-four {
     display: block;
     float: left;
     position: relative;
-    -webkit-transition: 2s;
-    -moz-transition: 2s;
-    -ms-transition: 2s;
-    -o-transition: 2s;
-    transition: 2s; }
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
   .relatives .relatives-grid .relatives-grid-unit-3 {
     width: 100%; }
   .relatives .relatives-grid [class*="relatives-grid-unit-"]:hover {
@@ -659,14 +659,15 @@ figure.four-by-four {
     color: white;
     font-family: proxima;
     font-size: 20px;
-    padding: 15px 0;
+    padding: 35px 0;
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
     -ms-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s;
     opacity: 0;
-    pointer-events: none; }
+    pointer-events: none;
+    margin: 10px; }
   .relatives .relatives-grid [class*="relatives-grid-unit-"]:hover .relative-title, .touch .relatives .relatives-grid [class*="relatives-grid-unit-"] .relative-title {
     opacity: 0.9; }
 

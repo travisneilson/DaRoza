@@ -128,7 +128,7 @@ figure.image-and-pull-quote
   figcaption
     width: 100%
     margin: 0 auto
-    padding: 20px
+    padding: 20px 0px
     position: relative
     top: -82px
 
@@ -195,7 +195,7 @@ figure.four-by-four
       display: block
       float: left
       position: relative
-      +transition(2s)
+      +transition(1s)
           
     .relatives-grid-unit-2
       @extend .relatives-grid-unit-1
@@ -223,12 +223,12 @@ figure.four-by-four
       font:
         family: proxima
         size: 20px
-      padding: 15px 0
+      padding: 35px 0
       +transition(.2s)
       opacity: 0
       pointer-events: none
-      
-            
+      margin: 10px
+                  
     [class*="relatives-grid-unit-"]:hover .relative-title,
     .touch & [class*="relatives-grid-unit-"] .relative-title
       opacity: .9
