@@ -313,7 +313,7 @@ footer {
   margin-top: 20px;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
   display: none;
-  background-color: #fafafa; }
+  background-color: white; }
   .name-card-wrap .card-avatar {
     width: 125px;
     height: 125px;
@@ -334,7 +334,7 @@ footer {
   .name-card-wrap .card-name {
     position: absolute;
     right: 0px;
-    bottom: -25px;
+    bottom: -35px;
     left: 0px;
     text-align: center;
     color: #333333;
