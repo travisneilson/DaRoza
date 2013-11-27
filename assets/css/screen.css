@@ -221,13 +221,12 @@ a:hover, a:focus {
 
 header {
   height: 60px;
-  background: rgba(255, 255, 255, 0.95);
   position: fixed;
   width: 100%;
   z-index: 99;
   top: 0; }
   header nav {
-    background-color: white;
+    background: rgba(255, 255, 255, 0.95);
     position: absolute;
     bottom: 0px;
     -webkit-transition: all 0.15s ease-out 0;
@@ -235,7 +234,8 @@ header {
     -ms-transition: all 0.15s ease-out 0;
     -o-transition: all 0.15s ease-out 0;
     transition: all 0.15s ease-out 0;
-    z-index: 10; }
+    z-index: 10;
+    width: 100%; }
     header nav ul li {
       text-align: center;
       height: 60px; }
@@ -258,7 +258,8 @@ header {
     height: 60px;
     line-height: 60px;
     padding: 0 50px;
-    cursor: pointer; }
+    cursor: pointer;
+    text-align: center; }
     header h1:hover {
       background-color: #fafafa; }
     header h1 img {
