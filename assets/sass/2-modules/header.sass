@@ -40,8 +40,6 @@ header
             background-color: #fafafa
             color: white
             color: black
-            transition: (.3s)
-
 
 
   // Menu label / Site Title
@@ -52,18 +50,23 @@ header
     padding: 0 50px
     cursor: pointer
     text-align: center
-    background-color: #ffffff
+    background-color: #fff
+    
+    
     
     &:hover
       background-color: #fafafa
-    
-    
+    &.tint
+      background-color: #fafafa
+      +transition(background-color 0.8s ease-in-out)
+      
     img 
       position: relative
       top: 2px
       margin-left: 15px
 
-
+  nav.open h1
+    background-color: #fafafa
 
   // Social Icons
   

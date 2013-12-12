@@ -66,6 +66,8 @@ $(function() {
   redSlider();
   slippySlider();
   relationTitle();
+  relationGrid();
+  scrolled();
 });
 
 function navStuff() {
@@ -78,9 +80,9 @@ function navStuff() {
   
   $nav.click(function() {
     if (!$nav.hasClass('closed')) {
-      $nav.css('bottom', '0px').addClass('closed');
+      $nav.css('bottom', '0px').addClass('closed').removeClass('open');
     } else {
-      $nav.css('bottom', '-' + navItemNum*navItemHeight + 'px').removeClass('closed');
+      $nav.css('bottom', '-' + navItemNum*navItemHeight + 'px').removeClass('closed').addClass('open');
     }
   });
 }
@@ -111,6 +113,7 @@ function linkCard() {
 
 }
 
+
 function redSlider() {
 
   $('.page-home .cta').hover(function() {
@@ -124,6 +127,7 @@ function redSlider() {
   });
 
 }
+
 
 function slippySlider() {
   
@@ -219,9 +223,6 @@ function slippySlider() {
 } // END slippySlider()
 
 
-
-
-
 function relationTitle() {
   $('.relatives-grid > a').each(function() {
     var $this = $(this),
@@ -234,6 +235,49 @@ function relationTitle() {
   });
 }
 
+
+function relationGrid() {
+
+  $('.new-relatives-grid a').each(function() {
+    
+    var $this = $(this),
+        $hyphenName = $this.attr('href').slice(1),
+        $splitName = $hyphenName.split('-'),
+        $relationship = $this.data('relationship'),
+        $currPageName = $('.title h2').text().split(' '),
+        $thumbUrl = '/assets/img/card-thumbs/'+ $hyphenName +'.jpg',
+        $template = '<div class="name-card-wrap">' +
+          '<div class="card-avatar" style="background-image: url('+ $thumbUrl +')">' +
+            '<div class="card-fade"></div>' +
+            '<div class="card-name">'+ $splitName[0] +' '+ $splitName[1] +'</div>' + 
+          '</div>' +
+          '<div class="link-portion">' +
+            '<div class="relation">('+ $currPageName[0] +'\'s '+ $relationship +')</div>' +
+            '<div class="cta">Read '+ $splitName[0] +'\'s Story</div>' +
+          '</div>' +
+        '</div>';
+    
+    $this.empty().append($template);
+
+  });
+
+}
+
+
+function scrolled() {
+  
+  $(window).scroll(function() { 
+  			
+    var y = $(window).scrollTop();
+    
+    if(y > 3) {
+      $('header nav h1').addClass('tint');
+    } else {
+      $('header nav h1').removeClass('tint');
+    }
+      
+  });
+}
 
 var is_touch_device = 'ontouchstart' in document.documentElement;
 if(is_touch_device) $('html').addClass('touch');

@@ -256,8 +256,7 @@ header {
           background-color: #ae1d22;
           background-color: #fafafa;
           color: white;
-          color: black;
-          transition: 0.3s; }
+          color: black; }
   header h1 {
     height: 60px;
     line-height: 60px;
@@ -267,10 +266,19 @@ header {
     background-color: white; }
     header h1:hover {
       background-color: #fafafa; }
+    header h1.tint {
+      background-color: #fafafa;
+      -webkit-transition: background-color 0.8s ease-in-out;
+      -moz-transition: background-color 0.8s ease-in-out;
+      -ms-transition: background-color 0.8s ease-in-out;
+      -o-transition: background-color 0.8s ease-in-out;
+      transition: background-color 0.8s ease-in-out; }
     header h1 img {
       position: relative;
       top: 2px;
       margin-left: 15px; }
+  header nav.open h1 {
+    background-color: #fafafa; }
   header .social {
     height: 60px;
     float: right;
@@ -376,6 +384,35 @@ footer {
   .family-link:hover .name-card-wrap {
     height: 300px;
     opacity: 1; }
+
+.new-relatives-grid a {
+  text-decoration: none; }
+  .new-relatives-grid a .name-card-wrap {
+    opacity: 1;
+    height: 300px;
+    width: 243px;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: 20px 10px;
+    background-color: whitesmoke; }
+    .new-relatives-grid a .name-card-wrap .link-portion {
+      background-color: whitesmoke; }
+    .new-relatives-grid a .name-card-wrap:hover .cta {
+      background-color: #ae1d22; }
+
+.new-relatives-grid {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around; }
 
 .title {
   text-align: center;
