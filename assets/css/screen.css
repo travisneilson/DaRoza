@@ -306,13 +306,19 @@ footer {
   display: inline-block;
   color: #ae1d22;
   text-decoration: none; }
+  .family-link:hover .name-card-wrap {
+    transition: opacity 0.5s ease-out 0s, height 0s linear 0s; }
 
 .name-card-wrap {
   position: absolute;
   top: 10px;
   margin-top: 20px;
-  display: none;
-  background-color: white; }
+  height: 0px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.5s ease-out 0.5s, height 0s linear 1s;
+  opacity: 0; }
   .name-card-wrap .card-avatar {
     width: 125px;
     height: 125px;
@@ -368,61 +374,8 @@ footer {
 .family-link:hover {
   color: #ae1d22; }
   .family-link:hover .name-card-wrap {
-    display: block; }
-
-.flipInX {
-  -webkit-backface-visibility: visible !important;
-  -moz-backface-visibility: visible !important;
-  -o-backface-visibility: visible !important;
-  backface-visibility: visible !important;
-  -webkit-animation-name: flipInX;
-  -moz-animation-name: flipInX;
-  animation-name: flipInX;
-  -webkit-perspective-origin: top;
-  -moz-perspective-origin: top;
-  -o-perspective-origin: top;
-  perspective-origin: top;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-duration: 300ms;
-  -moz-animation-duration: 300ms;
-  animation-duration: 300ms; }
-
-@-webkit-keyframes flipInX {
-  0% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
-@-moz-keyframes flipInX {
-  0% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
-@-ms-keyframes flipInX {
-  0% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
-@-o-keyframes flipInX {
-  0% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
-@keyframes flipInX {
-  0% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
+    height: 300px;
+    opacity: 1; }
 
 .title {
   text-align: center;

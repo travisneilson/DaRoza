@@ -37,7 +37,7 @@ function linkCard() {
         $relationship = $this.data('relationship'),
         $currPageName = $('.title h2').text().split(' '),
         $thumbUrl = '/assets/img/card-thumbs/'+ $hyphenName +'.jpg',
-        $template = '<div class="name-card-wrap flipInX">' +
+        $template = '<div class="name-card-wrap">' +
           '<div class="card-avatar" style="background-image: url('+ $thumbUrl +')">' +
             '<div class="card-fade"></div>' +
             '<div class="card-name">'+ $splitName[0] +' '+ $splitName[1] +'</div>' + 
