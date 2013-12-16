@@ -1,0 +1,7 @@
+permalink: /:title/
+
+exclude:  [
+  'sass/',
+  'README.md',
+  '.gitignore'  
+]

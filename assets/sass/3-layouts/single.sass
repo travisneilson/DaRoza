@@ -1,0 +1,250 @@
+// Single Page Title (Persons Name)
+
+.title
+  text-align: center
+  padding-top: 30px
+
+  h2
+    font-size: 90px
+    padding: 0 80px
+    display: inline-block
+    height: 180px
+    line-height: 156px
+    white-space: nowrap
+    background-image: url(../img/title-ornament-left.svg), url(../img/title-ornament-right.svg)
+    background-position: top left, top right
+    background-repeat: no-repeat
+    background-size: contain
+    margin: 50px 0 0 0
+    width: 70%
+
+
+
+// Person Summary
+
+.summary
+  margin: 50px auto
+  width: 400px
+  font: 12px/2.2 $helvetica
+  position: relative
+  
+  p
+    padding: 0 20px
+  
+  
+  // The images here need to be 68px squared. Is retnas, ok?
+  // They are called inline. See Greg's example. ok??
+  .summary-icon-1
+    display: block
+    +position(absolute, 50% -100px 0 0)
+    line-height: 1
+    margin-top: -17px
+    +size(34)
+    background:
+      position: center
+      repeat: no-repeat
+      size: 34px 34px
+  
+  .summary-icon-2
+    @extend .summary-icon-1
+    left: -100px
+    right: auto
+
+
+
+// Full Width Portrait / Main Portrait
+
+.full-width-portrait
+  background-position: center center
+  background-size: cover
+  position: relative
+  
+  &:before 
+    content: ''
+    @include size(100% 3px)
+    @include position(absolute, 0px 0 0 0)
+    background-image: url(../img/zig-edge-top.png)
+  
+  &:after
+    content: ''
+    +size(100% 3px)
+    +position(absolute, 0 0 0px 0)
+    background-image: url(../img/zig-edge-bottom.png)
+  
+  .aspect
+    padding-bottom: 66.6%
+
+
+
+// Text Container Types
+
+section.text-container
+  max-width: 540px
+  padding: 40px
+  background-color: rgba(255,255,255,0.95)
+  
+  &.pull-up
+    position: relative
+    top: -110px
+    margin-bottom: -110px
+
+
+
+section.family-at-a-glance
+  float: left
+  width: 320px
+  font-family: $helvetica
+  font-size: 11px
+  line-height: 1.2
+  padding-top: 60px
+  margin-bottom: 50px
+  
+  .family-title
+    margin: 0
+    padding: 20px 0
+    font-size: 14px
+    font-weight: bold
+  
+  ul
+    padding-left: 70px
+  
+  li
+    margin-bottom: 10px
+    float: left
+    width: 110px
+
+
+
+figure.image-and-pull-quote
+  max-width: 940px
+  margin: 0 auto
+  
+  &.full-width
+    max-width: 100%
+  
+  img
+    width: 100%
+  
+  figcaption
+    width: 100%
+    margin: 0 auto
+    padding: 20px 0px
+    position: relative
+    top: -82px
+
+figcaption
+  text-align: center
+  background-color: rgba(255,255,255,.9)
+  font: italic 18px/2 $georgia
+  color: #585858
+
+
+.decoration
+  text-align: center
+  padding-top: 50px
+
+
+
+figure.four-by-four
+  position: relative
+  margin-bottom: 50px
+  +clearfix()
+  
+  >*:not(figcaption)
+    float: left
+    margin: 5px
+  
+  .spacer
+    +size(460 306)
+    position: relative
+    
+    hr.ball-rule
+      +position(absolute, 50% 0 0 50%)
+      width: 85px
+      margin-left: -42px
+
+
+  
+  figcaption
+    background-color: rgba(255,255,255,.95)
+    +position(absolute, 50% 30% 0 30%)
+    padding: 20px
+    margin-top: -50px
+    
+    hr.ball-rule
+      margin: 0
+      padding: 0
+
+
+.relatives
+  +clearfix
+  
+  h3
+    padding-top: 50px
+  
+  .relatives-grid
+  
+    .relatives-grid-unit-1
+      background:
+        color: #ccc
+        size: 100% auto
+        position: center
+        repeat: no-repeat
+      //+size(50% 100px)
+      width: 50%
+      display: block
+      float: left
+      position: relative
+      +transition(1s)
+      -webkit-filter: brightness(90%)
+          
+    .relatives-grid-unit-2
+      @extend .relatives-grid-unit-1
+    
+    .relatives-grid-unit-3
+      @extend .relatives-grid-unit-1
+      width: 100%
+    
+    [class*="relatives-grid-unit-"]
+      &:hover
+        background-size: 103%
+        -webkit-filter: brightness(100%)
+      
+      &:after
+        content: ''
+        display: block
+        position: relative
+        width: 100%
+        padding-top: 50%
+    
+    .relative-title
+      +position(absolute, 0 0px 0px 0px)
+      background: #8c0a0e
+      text-align: center
+      color: white
+      font:
+        family: proxima
+        size: 20px
+      padding: 35px 0
+      +transition(.2s)
+      opacity: 0
+      margin: 10px
+      z-index: 99
+      border-radius: 3px
+                  
+    [class*="relatives-grid-unit-"]:hover .relative-title,
+    .touch & [class*="relatives-grid-unit-"] .relative-title
+      opacity: .95
+    
+    .relative-title:hover
+      background: $dynastyRed
+      
+
+.family-tree
+  width: 85%
+  max-width: 1200px
+  margin: 50px auto
+  display: block
+  
+  
+  

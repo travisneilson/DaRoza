@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="{% if page.home %}page-home{% endif %} {{ page.type }}">
+<head>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <title>{% if page.title %} {{ page.title }} | {% endif %} THE DaROZA DYNASTY</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="/assets/css/screen.css">
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+  
+  <header>
+    
+    <nav>
+    
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><img class="nav-spacer" src="/assets/img/nav_spacer.png"</li>
+        <li><a href="/greg-costa">Greg Costa</a></li>
+        <li><a href="/julia-coster">Julia Coster</a></li>
+        <li><a href="/wes-costa">Wes Costa</a></li>
+        <li><a href="/gwen-wilder">Gwen Wilder</a></li>
+        <li><a href="/gail-haggard">Gail Haggard</a></li>
+      </ul>
+      
+      <h1><span>THE DaROZA DYNASTY</span></h1>
+    
+    </nav>
+    
+  </header>
+  
+  {{ content }}
+
+<footer>
+  <img src="/assets/img/logo.svg" class="logo-footer" />
+  <h3>A Study Of Family</h3>
+  <p>by Jonathan Haggard</p>
+
+</footer>
+
+<script src="/assets/js/functions-ck.js"></script>
+<!-- REMEMBER TO TRACK! -->
+</body>
+</html>

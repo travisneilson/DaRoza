@@ -1,0 +1,38 @@
+// Smaller than standard 940 (devices and browsers)
+@media only screen and (max-width: 939px)
+  
+  .title h2
+    height: 100px
+    line-height: 80px
+  
+  .decoration 
+    float: none
+  
+  .text-container
+    float: none
+    margin: 0 auto
+  
+  .family-at-a-glance
+    margin: 0 auto 50px
+    float: none !important
+    +clearfix()
+  
+  figure.four-by-four
+    text-align: center
+    
+    .spacer
+      display: none
+      
+    img
+      width: 48%
+      float: none !important
+      
+    figcaption
+      position: relative
+      left: auto
+      right: auto
+      margin: -40px 40px 0
+    
+  .relatives .relatives-grid [class*="relatives-grid-unit-"] .relative-title:after,
+  .relatives .relatives-grid [class*="relatives-grid-unit-"] .relative-title:before
+    display: none
