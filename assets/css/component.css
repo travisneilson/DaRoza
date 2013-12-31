@@ -180,13 +180,17 @@ html, body, .perspective {
 /* Individual Effects */
 /* Effect Move Down */
 .effect-movedown {
-	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(134, 19, 23)), to(rgb(225, 37, 20)));
+	background: url('../img/navbg.jpg') no-repeat;
+	
+	background-position: center;
+	background-size: cover;
+/*	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(134, 19, 23)), to(rgb(225, 37, 20)));
 	background-image: -webkit-linear-gradient(top, rgb(134, 19, 23), rgb(225, 37, 20));
 	background-image: -moz-linear-gradient(top, rgb(134, 19, 23), rgb(225, 37, 20));
 	background-image: -o-linear-gradient(top, rgb(134, 19, 23), rgb(225, 37, 20));
 	background-image: -ms-linear-gradient(top, rgb(134, 19, 23), rgb(225, 37, 20));
 	background-image: linear-gradient(top, rgb(134, 19, 23), rgb(225, 37, 20));
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#861317', EndColorStr='#e12514');
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#861317', EndColorStr='#e12514');*/
 	
 }
 
@@ -286,7 +290,7 @@ html, body, .perspective {
 	}
 
 	.outer-nav.bottom {
-		bottom: 5%;
+		bottom: 2%;
 	}
 	
 	.outer-nav.horizontal {
