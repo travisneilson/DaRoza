@@ -5,7 +5,9 @@
 	transition: all .2s ease-out;
 }
 
-
+.home-slider{
+	height: 800px;
+}
 html, body, .perspective {
 	width: 100%;
 	height: 100%;
