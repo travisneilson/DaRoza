@@ -269,7 +269,7 @@ html, body, .perspective {
 @media screen and (max-width: 77em) {
 	
 	.outer-nav.top {
-		top: 25%;
+		top: 20%;
 	}
 
 	.outer-nav.bottom {
@@ -277,10 +277,12 @@ html, body, .perspective {
 	}
 }
 
+
+/*iphone*/
 @media screen and (max-width: 36.625em), screen and (max-height: 41.75em) {
 
 	.outer-nav.top {
-		top: 5%;
+		top: 0%;
 	}
 
 	.outer-nav.bottom {
@@ -295,6 +297,7 @@ html, body, .perspective {
 	.outer-nav.horizontal a {
 		display: block;
 		text-align: center;
+		margin-bottom: 0px;
 	}
 	.nav-avatar{
 		display: none;
