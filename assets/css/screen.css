@@ -769,6 +769,14 @@ figure.four-by-four {
       pointer-events: none;
       opacity: 0; }
 
+button {
+  background: black;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999; }
+
 @media only screen and (min-width: 1500px) {
   .title h2 {
     height: 250px;
