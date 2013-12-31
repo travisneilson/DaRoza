@@ -1,4 +1,4 @@
-.nav-avatar, .nav-fade{
+.nav-avatar, .nav-fade, .nav-name{
 	-webkit-transition: all .2s ease-out;
 	-moz-transition: all .2s ease-out;
 	-o-transition: all .2s ease-out;
@@ -6,7 +6,7 @@
 }
 
 .home-slider{
-	height: 800px;
+	height: 750px;
 }
 html, body, .perspective {
 	width: 100%;
@@ -22,6 +22,14 @@ html, body, .perspective {
 	font-weight: 300;
 	font-size: 20px;
 	color: #fff;
+	padding: 3px 5px;
+	border-radius: 3px;
+}
+
+.nav-name:hover{
+	
+	background: rgba(95,8,11,.9);
+	
 }
 .nav-relatives-grid .nav-avatar{
 	border-radius: 50%;
@@ -30,10 +38,10 @@ html, body, .perspective {
 	overflow: hidden;
 	position: relative;
 	margin: 20px 20px 5px;
-	box-shadow: 0px 0px 0px 0px rgba(255,255,255,.0);
+	box-shadow: 0px 0px 0px 0px rgba(95,8,11,0);
 }
 .nav-relatives-grid .nav-avatar:hover{
-	box-shadow: 0px 0px 0px 5px rgba(255,255,255,1);
+	box-shadow: 0px 0px 0px 5px rgba(95,8,11,.9);
 }
 .nav-avatar img{
 	position: relative;
@@ -288,6 +296,10 @@ html, body, .perspective {
 		display: block;
 		text-align: center;
 	}
+	.nav-avatar{
+		display: none;
+	}
+	
 
 	/* Special Case */
 	.effect-rotatetop .outer-nav.horizontal {
@@ -318,4 +330,5 @@ html, body, .perspective {
 	.outer-nav a {
 		margin-bottom: 20px;
 	}
-}
+	
+	}
