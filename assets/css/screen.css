@@ -417,6 +417,17 @@ footer {
   -moz-justify-content: space-around;
   justify-content: space-around; }
 
+.nav-relatives-grid {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around; }
+
 .title {
   text-align: center;
   padding-top: 30px; }
@@ -768,14 +779,6 @@ figure.four-by-four {
     .home-slider [class^="icon-arrow"].inactive {
       pointer-events: none;
       opacity: 0; }
-
-button {
-  background: black;
-  color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 999; }
 
 @media only screen and (min-width: 1500px) {
   .title h2 {
