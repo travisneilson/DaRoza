@@ -267,7 +267,7 @@ header {
     header h1:hover {
       background-color: #fafafa; }
     header h1.tint {
-      background-color: #fafafa;
+      background-color: white;
       -webkit-transition: background-color 0.8s ease-in-out;
       -moz-transition: background-color 0.8s ease-in-out;
       -ms-transition: background-color 0.8s ease-in-out;
