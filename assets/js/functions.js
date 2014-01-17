@@ -206,21 +206,6 @@ function relationGrid() {
 }
 
 
-function scrolled() {
-  
-  $(window).scroll(function() { 
-  			
-    var y = $(window).scrollTop();
-    
-    if(y > 3) {
-      $('header nav h1').addClass('tint');
-    } else {
-      $('header nav h1').removeClass('tint');
-    }
-      
-  });
-}
-
 var is_touch_device = 'ontouchstart' in document.documentElement;
 if(is_touch_device) $('html').addClass('touch');
 
