@@ -1,3 +1,7 @@
+.relative-title{
+	display: none;
+}
+
 .nav-avatar, .nav-fade, .nav-name{
 	-webkit-transition: all .2s ease-out;
 	-moz-transition: all .2s ease-out;
@@ -19,7 +23,7 @@ html, body, .perspective {
 .nav-relatives-grid .nav-name{
 	margin-top: 5px;
 	font-family: proxima;
-	font-weight: 300;
+	font-weight: bold;
 	font-size: 20px;
 	color: #fff;
 	padding: 3px 5px;
@@ -41,7 +45,8 @@ html, body, .perspective {
 	box-shadow: 0px 0px 0px 0px rgba(95,8,11,0);
 }
 .nav-relatives-grid .nav-avatar:hover{
-	box-shadow: 0px 0px 0px 5px rgba(95,8,11,.9);
+	box-shadow: 0px 0px 0px 6px rgba(80,6,7,.9), 0px 0px 0px 30px rgba(80,6,7,.2);
+	
 }
 .nav-avatar img{
 	position: relative;
@@ -142,8 +147,7 @@ html, body, .perspective {
 
 .outer-nav.horizontal {
 	left: 50%;
-	width: 75%;
-	max-width: 1000px;
+	width: 85%;
 	text-align: center;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
@@ -158,7 +162,7 @@ html, body, .perspective {
 }
 
 .outer-nav.top {
-	top: 25%;
+	top: 30%;
 }
 
 .outer-nav.bottom {
@@ -203,11 +207,13 @@ html, body, .perspective {
 
 .effect-movedown .container::after {
 	background: rgba(174, 29, 34, 0.5);
+	outline: 2px solid #5a0809;
+	outline-offset: -1px;
 }
 
 .effect-movedown.animate .container {
-	-webkit-transform: translateY(100%) translateZ(-1500px);
-	transform: translateY(100%) translateZ(-1500px);
+	-webkit-transform: translateY(120%) translateZ(-1500px);
+	transform: translateY(120%) translateZ(-1500px);
 }
 
 .no-csstransforms3d .effect-movedown.animate .container {

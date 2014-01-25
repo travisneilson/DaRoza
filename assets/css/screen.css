@@ -99,6 +99,15 @@
   .positioner:after {
     clear: both; }
 
+.positionernav {
+  margin: 0 auto;
+  *zoom: 1; }
+  .positionernav:before, .positionernav:after {
+    content: " ";
+    display: table; }
+  .positionernav:after {
+    clear: both; }
+
 .float-right {
   float: right; }
 
