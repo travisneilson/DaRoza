@@ -289,7 +289,7 @@ html, body, .perspective {
 
 
 /*iphone*/
-@media screen and (max-width: 36.625em), screen and (max-height: 41.75em) {
+@media screen and (max-width: 36.625em), screen and (max-height: 40.75em) {
 
 	.outer-nav.top {
 		top: 0%;
