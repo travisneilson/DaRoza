@@ -7,6 +7,12 @@
 footer h3{
     margin-bottom: 0px;   
 }
+.logo-footer {
+width: 80%;
+max-width: 1200px;
+margin: 50px auto -36px;
+display: block;
+}
 h3.homepageheader{
     text-align: center;
     margin:70px 0 10px;
