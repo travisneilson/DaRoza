@@ -1,6 +1,23 @@
 .relative-title{
 	display: none;
 }
+.home-slider .story-target{
+    top: 52%;   
+}
+footer h3{
+    margin-bottom: 0px;   
+}
+h3.homepageheader{
+    text-align: center;
+    margin:70px 0 10px;
+}
+.relatives h3{
+    text-align: center;   
+}
+.relatives .relatives-grid .relatives-grid-unit-1, .relatives .relatives-grid .relatives-grid-unit-2, .relatives .relatives-grid .relatives-grid-unit-3{
+    background-size: 101% auto; 
+    transform: translate3d(0,0,0);
+}
 .name-card-wrap .card-name, .name-card-wrap .link-portion .relation, .name-card-wrap .link-portion .cta{
     font-style: normal;   
 }
@@ -42,7 +59,7 @@ html, body, .perspective {
 
 .nav-name:hover{
 	
-	background: rgba(95,8,11,.9);
+	background: rgba(0,0,0,.9);
 	
 }
 .nav-relatives-grid .nav-avatar{
@@ -52,27 +69,32 @@ html, body, .perspective {
 	overflow: hidden;
 	position: relative;
 	margin: 20px 20px 5px;
-	box-shadow: 0px 0px 0px 0px rgba(95,8,11,0);
+	box-shadow: 0px 0px 0px 0px rgba(255,255,255,0);
 }
 .nav-relatives-grid .nav-avatar:hover{
-	box-shadow: 0px 0px 0px 6px rgba(80,6,7,.9), 0px 0px 0px 30px rgba(80,6,7,.2);
+	box-shadow: 0px 0px 0px 6px rgba(0,0,0,.5), 0px 0px 0px 30px rgba(255,255,255,.2);
 	
 }
 .nav-avatar img{
 	position: relative;
 	left: -25%;
 	height: 125px;
+    cursor: pointer;
 	
 }
 .nav-fade{
-	background: rgba(174, 29, 34, 0.2);
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	z-index: 99;
+    cursor: pointer;
+    rgba(0,0,0,.9)
 }
-.nav-avatar:hover .nav-fade{
-	background: rgba(174, 29, 34, 0);
+.nav-avatar img{
+    -webkit-filter: grayscale(100%) contrast(120%) brightness(70%);   
+}
+.nav-avatar:hover img{
+	-webkit-filter: grayscale(0%) contrast(100%) brightness(100%);
 }
 
 .perspective {
@@ -129,7 +151,7 @@ html, body, .perspective {
 	cursor: pointer;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-    	-webkit-transform: translateY(0%) translateZ(0px);
+    -webkit-transform: translateY(0%) translateZ(0px);
 	transform: translateY(0%) translateZ(0px);
 }
 
@@ -139,7 +161,7 @@ html, body, .perspective {
 
 .animate .container::after {
 	opacity: 1;
-	height: 101%;
+	height: 100%;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 }
@@ -216,10 +238,14 @@ html, body, .perspective {
 	transition: transform 0.4s;
 	-webkit-transform-origin: 50% 50%;
 	transform-origin: 50% 50%;
+/*
+    -webkit-transform: translateY(0%) translateZ(0px);
+	transform: translateY(0%) translateZ(0px);
+*/
 }
 
 .effect-movedown .container::after {
-	background: rgba(174, 29, 34, 0.5);
+	background: rgba(174, 29, 34, 0);
 	outline: 2px solid #5a0809;
 	outline-offset: -1px;
 }
