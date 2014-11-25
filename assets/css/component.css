@@ -1,7 +1,12 @@
 .relative-title{
 	display: none;
 }
-
+.name-card-wrap .card-name, .name-card-wrap .link-portion .relation, .name-card-wrap .link-portion .cta{
+    font-style: normal;   
+}
+.name-card-wrap .link-portion .cta{
+    margin-top:-13px !important;   
+}
 .nav-avatar, .nav-fade, .nav-name{
 	-webkit-transition: all .2s ease-out;
 	-moz-transition: all .2s ease-out;
@@ -108,6 +113,7 @@ html, body, .perspective {
 	position: fixed;
 	-webkit-perspective: 1500px;
 	perspective: 1500px;
+    
 }
 
 .modalview .container {
@@ -118,6 +124,8 @@ html, body, .perspective {
 	cursor: pointer;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+    	-webkit-transform: translateY(0%) translateZ(0px);
+	transform: translateY(0%) translateZ(0px);
 }
 
 .modalview .wrapper {
@@ -273,7 +281,9 @@ html, body, .perspective {
 	transition-delay: 0.28s;
 }
 
-
+.text-container{
+  background-color: rgba(255,255,255,1) !important;
+}
 
 /* Media Queries */
 @media screen and (max-width: 77em) {
