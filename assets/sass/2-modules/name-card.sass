@@ -13,9 +13,10 @@
   height: 0px
   overflow: hidden
   background-color: white
-  box-shadow: 0px 1px 3px rgba(0,0,0,0.3)
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.3)
   transition: opacity .5s ease-out 0.5s, height 0s linear 1s
   opacity: 0
+  border-radius: 3px 3px 0 0
   
   .card-avatar
     +size(125 125)
@@ -25,6 +26,10 @@
     border-radius: 50%
     margin: 25px 59px
     background-size: cover
+    transition: .2s
+    
+    &:hover
+      box-shadow: 0px 0px 0px 5px $dynastyRed    
   	
   .card-fade
     
@@ -60,12 +65,13 @@
     .cta
       font-family: proxima
       font-size: 18px
-      margin: 0 10px 10px
-      padding: 10px
+      margin: 0
+      padding: 20px 10px
       color: white
       background-color: #8c0a0e
+      box-shadow: 0px 5px 0px #6b080b
       text-transform: capitalize
-      width: 200px
+      transition: .2s
       
       &:hover
         background-color: $dynastyRed
@@ -86,13 +92,10 @@
     width: 243px
     +position(relative, 0px 0px 0px 0px)
     margin: 20px 10px
-    background-color: #f5f5f5
+    background-color: #fff
     
     .link-portion
-      background-color: #f5f5f5
-    
-    &:hover .cta
-      background-color: #ae1d22
+      background-color: #fff
     
     
     

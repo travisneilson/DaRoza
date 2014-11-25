@@ -24,5 +24,10 @@ $dynastyRed: #ae1d22;
   @include clearfix();
 }
 
+.positionernav{
+	margin: 0 auto;
+	@include clearfix();
+}
+
 .float-right {float: right;}
 .float-left {float: left;}

@@ -2,45 +2,100 @@
 <html class="{% if page.home %}page-home{% endif %} {{ page.type }}">
 <head>
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes" />
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
   <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <title>{% if page.title %} {{ page.title }} | {% endif %} THE DaROZA DYNASTY</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="stylesheet" href="/assets/css/screen.css">
+  <link rel="stylesheet" href="/assets/css/component.css">
+  <script src="/assets/js/modernizr.custom.25376.js" type="text/javascript"></script>
+
+  
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
   
+  <div id="perspective" class="perspective effect-movedown">
+  		<div class="container">
+  	        <div class="wrapper"><!-- wrapper needed for scroll -->
+  
   <header>
     
     <nav>
-    
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><img class="nav-spacer" src="/assets/img/nav_spacer.png"</li>
-        <li><a href="/greg-costa">Greg Costa</a></li>
-        <li><a href="/julia-coster">Julia Coster</a></li>
-        <li><a href="/wes-costa">Wes Costa</a></li>
-        <li><a href="/gwen-wilder">Gwen Wilder</a></li>
-        <li><a href="/gail-haggard">Gail Haggard</a></li>
-      </ul>
-      
-      <h1><span>THE DaROZA DYNASTY</span></h1>
+
+      <h1 id="showMenu"><span>THE DaROZA DYNASTY</span></h1>
     
     </nav>
     
   </header>
-  
   {{ content }}
+  
+  
+  <footer>
+    <img src="/assets/img/logo.svg" class="logo-footer" />
+    <h3>A Study Of Family</h3>
+    <p>by Jonathan Haggard</p>
+  
+  </footer>
+  
+			</div><!-- wrapper -->
+		</div><!-- /container -->
 
-<footer>
-  <img src="/assets/img/logo.svg" class="logo-footer" />
-  <h3>A Study Of Family</h3>
-  <p>by Jonathan Haggard</p>
+<nav class="outer-nav top horizontal">
+<div class="positionernav">
 
-</footer>
+<section class="relatives">
+	<div class="nav-relatives-grid">
+	
+	<!-- change to new-relatives-grid for cards -->
+	  
+	  <a href="/gail-haggard">
+		  <div class="nav-avatar"><div class="nav-fade"></div><img src="/assets/img/card-thumbs/gail-haggard.jpg" alt="" /></div>
+		  
+		  <span class="nav-name">Gail Haggard</span>
+	  </a>
+	  
+	  <a href="/gwen-wilder">
+		  <div class="nav-avatar"><div class="nav-fade"></div><img src="/assets/img/card-thumbs/gwen-wilder.jpg" alt="" /></div>
+		  
+		  <span class="nav-name">Gwen Wilder</span>
+	  </a>
+	  
+	  <a href="/flora-daroza">
+	  	  <div class="nav-avatar"><div class="nav-fade"></div><img src="/assets/img/card-thumbs/flora-daroza.jpg" alt="" /></div>
+	  	  
+	  	  <span class="nav-name">Flora DaRoza</span>
+	  </a>
+	  
+	  <a href="/wes-costa">
+	  	  <div class="nav-avatar"><div class="nav-fade"></div><img src="/assets/img/card-thumbs/wes-costa.jpg" alt="" /></div>
+	  	  
+	  	  <span class="nav-name">Wes Costa</span>
+	  </a>
+	  
+	  <a href="/julia-coster">
+	  	  <div class="nav-avatar"><div class="nav-fade"></div><img src="/assets/img/card-thumbs/julia-coster.jpg" alt="" /></div>
+	  	  
+	  	  <span class="nav-name">Julia Coster</span>
+	  </a>
+	  
+	  <a href="/greg-costa">
+	  	  <div class="nav-avatar"><div class="nav-fade"></div><img src="/assets/img/card-thumbs/greg-costa.jpg" alt="" /></div>
+	  	  
+	  	  <span class="nav-name">Greg Costa</span>
+	  </a>
+	  
+	</div>
+</section>
+</div>
+</nav>
 
+</div><!-- /perspective -->
+
+<script src="/assets/js/classie.js" type="text/javascript"></script>
+<script src="/assets/js/menu.js" type="text/javascript"></script>
 <script src="/assets/js/functions-ck.js"></script>
 <!-- REMEMBER TO TRACK! -->
 </body>
