@@ -4,6 +4,9 @@
 .name-card-wrap .card-name, .name-card-wrap .link-portion .relation, .name-card-wrap .link-portion .cta{
     font-style: normal;   
 }
+.new-relatives-grid a .name-card-wrap{
+    height: 287px;
+}
 .name-card-wrap .link-portion .cta{
     margin-top:-13px !important;   
 }
@@ -13,7 +16,9 @@
 	-o-transition: all .2s ease-out;
 	transition: all .2s ease-out;
 }
-
+section.text-container{
+  background-color: rgba(255,255,255,1) !important;
+}
 .home-slider{
 	height: 750px;
 }
@@ -281,9 +286,7 @@ html, body, .perspective {
 	transition-delay: 0.28s;
 }
 
-.text-container{
-  background-color: rgba(255,255,255,1) !important;
-}
+
 
 /* Media Queries */
 @media screen and (max-width: 77em) {
