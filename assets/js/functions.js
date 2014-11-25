@@ -2,7 +2,7 @@
 
 
 $(function() {
-  jQuery(".title h2").fitText(1,{ minFontSize: '50px'});
+  jQuery(".title h2").fitText(1,{ minFontSize: '50px' , maxFontSize: '80px'});
   navStuff();
   linkCard();
   redSlider();
