@@ -245,9 +245,11 @@ html, body, .perspective {
 }
 
 .effect-movedown .container::after {
+/*
 	background: rgba(174, 29, 34, 0);
-	outline: 2px solid #5a0809;
-	outline-offset: -1px;
+	outline: 10px solid white;
+	outline-offset: -10px;
+*/
 }
 
 .effect-movedown.animate .container {
