@@ -33,6 +33,10 @@ h3.homepageheader{
 .name-card-wrap .link-portion .cta{
     margin-top:-13px !important;   
 }
+.card-name{
+    font-size:14px !important; 
+
+}
 .nav-avatar, .nav-fade, .nav-name{
 	-webkit-transition: all .2s ease-out;
 	-moz-transition: all .2s ease-out;
