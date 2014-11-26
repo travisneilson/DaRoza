@@ -1,8 +1,32 @@
 .relative-title{
 	display: none;
 }
+.logohome img{
+    -webkit-transform: scale(1.2);
+}
+.logohome:hover img{
+    -webkit-transform: scale(1.3);
+}
 .home-slider .story-target{
     top: 52%;   
+}
+.postrelatives{
+    padding-top:150px;   
+}
+.homerelatives{
+    paddding-top:0px !important;   
+}
+.new-relatives-grid{
+    margin-top:-20px;   
+}
+footer p{
+    width: 40%;
+    margin: 0 auto 15px;
+}
+.colophon, .colophon a:link, .colophon:visited{
+    font-size: 11px; 
+    color: lightgrey;
+    text-decoration: none;
 }
 footer h3{
     margin-bottom: 0px;   
@@ -10,7 +34,7 @@ footer h3{
 .logo-footer {
 width: 80%;
 max-width: 1200px;
-margin: 50px auto -36px;
+margin: 150px auto -36px;
 display: block;
 }
 h3.homepageheader{
@@ -19,6 +43,7 @@ h3.homepageheader{
 }
 .relatives h3{
     text-align: center;   
+    margin-bottom:20px;
 }
 .relatives .relatives-grid .relatives-grid-unit-1, .relatives .relatives-grid .relatives-grid-unit-2, .relatives .relatives-grid .relatives-grid-unit-3{
     background-size: 101% auto; 
@@ -37,12 +62,24 @@ h3.homepageheader{
     font-size:14px !important; 
 
 }
-.nav-avatar, .nav-fade, .nav-name{
-	-webkit-transition: all .2s ease-out;
-	-moz-transition: all .2s ease-out;
-	-o-transition: all .2s ease-out;
-	transition: all .2s ease-out;
+
+.new-relatives-grid a .name-card-wrap{
+    -webkit-transform: scale(1);
 }
+
+.new-relatives-grid a .name-card-wrap:hover{
+    -webkit-transform: scale(1.1);
+}
+.nav-avatar, .nav-fade, .nav-name, .logohome img, .card-avatar, .name-card-wrap {
+-webkit-transition: all 200ms cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
+-webkit-transition: all 200ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+   -moz-transition: all 200ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+     -o-transition: all 200ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+        transition: all 200ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+    
+}
+
+
 section.text-container{
   background-color: rgba(255,255,255,1) !important;
 }
@@ -207,7 +244,7 @@ html, body, .perspective {
 }
 
 .outer-nav.top {
-	top: 30%;
+	top: 20%;
 }
 
 .outer-nav.bottom {
