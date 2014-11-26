@@ -244,7 +244,7 @@ html, body, .perspective {
 }
 
 .outer-nav.top {
-	top: 20%;
+	top: 10%;
 }
 
 .outer-nav.bottom {
@@ -367,7 +367,7 @@ html, body, .perspective {
 @media screen and (max-width: 77em) {
 	
 	.outer-nav.top {
-		top: 20%;
+		top: 5%;
 	}
 
 	.outer-nav.bottom {
@@ -401,7 +401,9 @@ html, body, .perspective {
 		display: none;
 	}
 	
-
+    .logohome img{
+    display: none;
+    }  
 	/* Special Case */
 	.effect-rotatetop .outer-nav.horizontal {
 		width: 95%;
@@ -420,7 +422,12 @@ html, body, .perspective {
 	.outer-nav.vertical {
 		width: 6.8em;
 	}
-
+    .outer-nav.top {
+		top: 0%;
+	}
+    .logohome img{
+    display: none;
+    }   
 	.outer-nav.right {
 		right: auto;
 		left: 50%;
