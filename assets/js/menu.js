@@ -40,6 +40,7 @@
 	function init() {
 		var showMenu = document.getElementById( 'showMenu' ),
 			perspectiveWrapper = document.getElementById( 'perspective' ),
+			headerWrapper = document.getElementById( 'header' ),
 			container = perspectiveWrapper.querySelector( '.container' ),
 			contentWrapper = container.querySelector( '.wrapper' );
 
@@ -53,6 +54,7 @@
 			document.body.scrollTop = document.documentElement.scrollTop = 0;
 			// add modalview class
 			classie.add( perspectiveWrapper, 'modalview' );
+			classie.add( headerWrapper, 'hideheader' );
 			// animate..
 			setTimeout( function() { classie.add( perspectiveWrapper, 'animate' ); }, 25 );
 		});
@@ -63,6 +65,7 @@
 					if( support && ( ev.target.className !== 'container' || ev.propertyName.indexOf( 'transform' ) == -1 ) ) return;
 					this.removeEventListener( transEndEventName, onEndTransFn );
 					classie.remove( perspectiveWrapper, 'modalview' );
+					classie.remove( headerWrapper, 'hideheader' );
 					// mac chrome issue:
 					document.body.scrollTop = document.documentElement.scrollTop = docscroll;
 					// change top of contentWrapper
