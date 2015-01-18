@@ -86,6 +86,11 @@ footer p{
 footer h3{
     margin-bottom: -13px;   
     font-weight: bold;
+    font-size: 24px;
+    font-family: proxima;
+    font-style: normal;
+    line-height: 24px;
+    text-transform: uppercase;
 }
 .logo-footer {
 width: 55%;
@@ -107,12 +112,33 @@ section.family-at-a-glance .family-title, section.family-at-a-glance li{
 	font-weight: bold;
 	text-align: center;
 }
-
+figure.four-by-four figcaption{
+	font-size: 22px;
+}
+figure.four-by-four{
+	margin-bottom: 90px;
+}
+h3{
+	font-family: 'Alegreya';
+	font-size: 100px;
+	line-height: 90px;
+	text-transform: none;
+	margin: 0px;
+	letter-spacing: 1px;
+	font-style: italic;
+	text-align: center;
+}
+.summary{
+	margin: 25px auto 50px;
+}
 .summary p{
 	font-family: proxima;
 	font-weight: bold;
 	margin: 0 0 25px 0;
 	text-align: center;
+}
+.full-width-portrait:after, .full-width-portrait:before{
+	display: none;
 }
 section.text-container.pull-up{
 	padding-top: 30px;
@@ -127,6 +153,9 @@ h3.homepageheader{
     margin-bottom:20px;
     font-size: 20px;
     font-weight: bold;
+    font-style: normal;
+    font-family: proxima;
+    text-transform: uppercase;
 }
 figure.image-and-pull-quote figcaption{
 	padding: 16px 0;
@@ -231,11 +260,7 @@ html, body, .perspective {
 	border-radius: 3px;
 }
 
-.nav-name:hover{
-	
-	background: rgba(0,0,0,.9);
-	
-}
+
 .nav-relatives-grid .nav-avatar{
 	width: 125px;
 	height: 125px;
@@ -649,6 +674,14 @@ header{
 	}
 	figure.four-by-four{
 		margin: 0px;
+	}
+	.title h2{
+		line-height: 50px;
+		padding-top: 20px;
+	}
+	h3{
+		line-height: 0px;
+		margin-bottom: -20px;
 	}
 
 }
