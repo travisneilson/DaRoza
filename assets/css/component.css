@@ -26,6 +26,7 @@
 }
 .relatives .relatives-grid .relatives-grid-unit-3 .relative-title{
 	font-size: 50px;
+	line-height: 44px;
 }
 .relatives .relatives-grid [class*="relatives-grid-unit-"]:after{
 	width: 0 !important;
@@ -123,6 +124,11 @@ h3.homepageheader{
     text-align: center;   
     margin-bottom:20px;
     font-size: 20px;
+    font-weight: bold;
+}
+figure.image-and-pull-quote figcaption{
+	padding: 16px 0;
+	font-size: 22px;
 }
 .tint{
 	width: 100%;
@@ -148,6 +154,15 @@ h3.homepageheader{
 
 .name-card-wrap .card-name, .name-card-wrap .link-portion .relation, .name-card-wrap .link-portion .cta{
     font-style: normal;   
+}
+.name-card-wrap .link-portion .relation{
+	padding: 6px 0 16px;
+}
+.name-card-wrap .card-name{
+	bottom: -32px;
+	font-weight: 700;
+	line-height: 12px;
+	font-size: 13px;
 }
 .new-relatives-grid a .name-card-wrap{
     height: 287px;
@@ -510,6 +525,7 @@ header{
     .logohome img{
     display: none;
     }  
+    
 	/* Special Case */
 	.effect-rotatetop .outer-nav.horizontal {
 		width: 95%;
@@ -533,7 +549,8 @@ header{
 	}
     .logohome img{
     display: none;
-    }   
+    }  
+     
 	.outer-nav.right {
 		right: auto;
 		left: 50%;
