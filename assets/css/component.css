@@ -39,6 +39,12 @@
 }
 .home-slider .story-target{
     top: 52%;   
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    margin: 150px 0px 0px;
+    position: relative;
+
 }
 .postrelatives{
     padding-top:150px;   
@@ -66,6 +72,8 @@ footer p{
 }
 .home-slider .quote{
 	font-size: 32px;
+	margin: 30px auto 30px;
+	width: 70%;
 }
 .cta{
 	font-weight: bold;
@@ -141,7 +149,10 @@ h3{
 	display: none;
 }
 section.text-container.pull-up{
-	padding-top: 30px;
+	padding: 30px 40px 40px;
+}
+section.text-container{
+	padding: 40px 0;
 }
 h3.homepageheader{
     text-align: center;
@@ -205,7 +216,9 @@ figure.image-and-pull-quote figcaption{
     font-size:14px !important; 
 
 }
-
+.home-slider .image-belt{
+	margin: 0 auto;
+}
 .home-slider .image-belt:before, .home-slider .image-belt:after{
 	opacity: .2;
 }
@@ -220,9 +233,7 @@ figure.image-and-pull-quote figcaption{
          -o-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
             transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
 }
-.home-slider .story-target:hover{
-	-webkit-transform: scale(1.05) translateZ(0);
-}
+
 .new-relatives-grid a .name-card-wrap:hover{
     -webkit-transform: scale(1.1);
 }
@@ -234,7 +245,14 @@ figure.image-and-pull-quote figcaption{
         transition: all 300ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
     
 }
-
+.home-slider [class^="icon-arrow"]{
+	left: 20px;
+	top: 50%;
+	margin-top: -38px;
+}
+.home-slider [class^="icon-arrow"].icon-arrow-right{
+	right: 20px;
+}
 
 section.text-container{
   background-color: rgba(255,255,255,1) !important;
@@ -616,23 +634,28 @@ header{
 		display: none;
 	}
 	.home-slider .image-belt img.present{
-		-webkit-transform: scale(.8);
-		transform: scale(.8);
+		-webkit-transform: scale(1);
+		transform: scale(1);
 	}
 	.home-slider{
 		height: 100vh;
 		padding-top: 0px;
 	}
-
+	.home-slider .cta{
+		font-size: 18px;
+	}
+	.home-slider .text-container{
+		margin-top: 40px;
+	}
 	.home-slider .quote{
-		margin: -10px 0 30px;
+		margin: -10px auto 30px;
 	}
 	.home-intro p, footer p{
 		margin: 30px auto 0;
 		width: 90%;
 	}
 	h3.homepageheader{
-		margin:  0 0 10px;
+		margin:  0 0 20px;
 	}
 	footer{
 		padding: 10px 0 50px;
@@ -680,8 +703,11 @@ header{
 		padding-top: 20px;
 	}
 	h3{
-		line-height: 0px;
+		line-height: 30px;
 		margin-bottom: -20px;
+		font-size: 30px;
 	}
-
+	.home-slider .story-target{
+		margin: 60px 0px 50px;
+	}
 }
