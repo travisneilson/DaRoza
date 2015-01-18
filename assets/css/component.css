@@ -3,7 +3,7 @@
 }
 .relatives .relatives-grid .relative-title{
 	background: none;
-	font-size: 28px;
+	font-size: 32px;
 	font-weight: bold;
 	padding: 20px 0;
 	display: flex;
@@ -13,12 +13,20 @@
 	padding:  0px;
 	position: relative;
 	text-decoration: none;
+	font-family: 'Alegreya', serif;
+	font-weight: 900;
+	font-style: italic;
 }
 .relatives .relatives-grid .relative-title:hover{
 	background: none;
 	transform: scale(1.1);
 }
-
+.relatives .relatives-grid .relatives-grid-unit-1 .relative-title{
+	font-size: 32px;
+}
+.relatives .relatives-grid .relatives-grid-unit-3 .relative-title{
+	font-size: 50px;
+}
 .relatives .relatives-grid [class*="relatives-grid-unit-"]:after{
 	width: 0 !important;
 }
@@ -47,6 +55,17 @@ footer p{
     font-size: 28px;
     
 }
+.text-container p{
+	font-size: 20px;
+	font-family: 'Alegreya', serif;
+}
+.figcaption, .home-slider .quote{
+	font-family: 'Alegreya', serif;
+	
+}
+.home-slider .quote{
+	font-size: 32px;
+}
 .cta{
 	font-weight: bold;
 }
@@ -71,6 +90,30 @@ max-width: 1200px;
 margin: 150px auto -36px;
 display: block;
 }
+section.family-at-a-glance{
+	padding-top: 20px;
+}
+section.family-at-a-glance ul{
+	padding-left: 0;
+}
+section.family-at-a-glance li{
+	width: 50%;
+}
+section.family-at-a-glance .family-title, section.family-at-a-glance li{
+	font-family: proxima;
+	font-weight: bold;
+	text-align: center;
+}
+
+.summary p{
+	font-family: proxima;
+	font-weight: bold;
+	margin: 0 0 25px 0;
+	text-align: center;
+}
+section.text-container.pull-up{
+	padding-top: 30px;
+}
 h3.homepageheader{
     text-align: center;
     margin:70px 0 10px;
@@ -79,6 +122,7 @@ h3.homepageheader{
 .relatives h3{
     text-align: center;   
     margin-bottom:20px;
+    font-size: 20px;
 }
 .tint{
 	width: 100%;
